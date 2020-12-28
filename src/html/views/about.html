@@ -1,0 +1,94 @@
+<%= _.template(require('./../includes/head.html').default)(data) %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<main class="about">
+  <section class="about__banner banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <h3 class="about__banner-title title">
+            Don’t Just Dream, Do. With Us.
+          </h3>
+          <a href="#" class="button"><span>Find Your Team</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-7 col-12">
+          <h1 class="about__title title">
+            <small>We Believe In</small>
+            Action. Community. Quality.
+          </h1>
+          <p class="about__content-text text">
+            At Fiverr, it’s our mission to grow and cultivate the world’s
+            largest digital marketplace, a place where people can find and
+            purchase any service they need, and build any business they dream.
+            As an employee, your work is inspired by the success of our users
+            and the celebration of your own personal growth. Join us.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="">
+    <div class="container">
+      <div class="row about__ourlife">
+        <div class="col-lg-7 col-12">
+          <button
+            class="about__thumbnail thumbnail fas fa-play"
+            data-toggle="modal"
+            data-target="modalVideo"
+          ></button>
+        </div>
+        <div class="col-lg-5 col-12">
+          <div class="about__ourlife-content">
+            <div class="about__ourlife-header">
+              <h3 class="about__ourlife-sub-title sub-title">Life at Fiverr</h3>
+              <p class="about__ourlife-text text text-white">
+                If an exciting challenge is what gets you up in the morning and
+                keeps you up at night, we should talk. Our offices are filled
+                with doers like you. Want coworkers who are as committed,
+                curious, and enthusiastic as you? Join the Fiverr team.
+              </p>
+            </div>
+            <div class="about__ourlife-footer">
+              <h3 class="about__ourlife-sub-title sub-title">
+                Find out what it’s like to work at Fiverr
+              </h3>
+              <a href="#" class="about__button instagram-button button">
+                <span class="button__icon">
+                  <i class="fab fa-instagram"></i>
+                </span>
+                <span>Follow us @insidefiverr</span>
+              </a>
+              <a href="#" class="about__button facebook-button button">
+                <span class="button__icon"
+                  ><i class="fab fa-facebook-f"></i
+                ></span>
+                <span>Visit Inside Fiverr</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="modal" id="modalVideo">
+  <div class="about__modal-content modal__content">
+    <div class="modal__close">&times;</div>
+    <iframe
+      width="988"
+      height="560"
+      src="https://www.youtube.com/embed/oziYC4FMzO8?autoplay=0"
+      frameborder="0"
+      allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture"
+    ></iframe>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %> <%=
+_.template(require('./../includes/scripts.html').default)(data) %>

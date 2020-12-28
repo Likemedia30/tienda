@@ -1,0 +1,132 @@
+.modal {
+  display: none;
+  position: fixed;
+  width: auto;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 100;
+
+  &__content {
+    margin-top: 2.5rem;
+    width: 100%;
+    max-width: 500px;
+    max-height: 95vh;
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  &__content::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d5d5d5;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+  }
+
+  &__image-container {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    font-size: $fontSize_name;
+  }
+
+  &__close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: #000000;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    padding: 20px 0;
+    font-size: $fontSize_name;
+    font-weight: 700;
+  }
+
+  &__body {
+    background-color: #ffffff;
+    padding: 30px 15px;
+    width: 98%;
+    margin: auto;
+  }
+
+  &__supportMini {
+    padding: 10px 0;
+  }
+
+  &__button {
+    width: 100%;
+    margin: auto;
+  }
+
+  &__paymentMethods {
+    margin: 0 -15px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  opacity: 0;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  transition: opacity 1s ease;
+}
+
+#modalVideo.modal {
+  .modal__close {
+    color: #ffffff;
+    top: -20px;
+    right: -20px;
+  }
+}
+
+.backdrop.show {
+  opacity: 1;
+}
+
+.modal.show {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .modal {
+    &__body {
+      padding: 30px;
+    }
+
+    &__paymentMethods {
+      margin: 0 -30px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}

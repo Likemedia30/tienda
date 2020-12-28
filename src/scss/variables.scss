@@ -1,0 +1,59 @@
+$color_main: #404145;
+$color_second: #1dbf73;
+$color_hints: #696969;
+$color_alert: #b73c3c;
+$color_additional: rgb(74, 115, 232); // show more, some links
+
+// main fonts size
+
+$fontSize_small: 14px;
+$fontSize_main: 16px;
+$fontSize_name: 20px;
+$fontSize_title: 30px;
+
+// fons
+
+$fonBody: #ffffff;
+$fon_yellow: #ffc500;
+$fon_green: #1dbf73;
+$fon_additional: rgb(214, 216, 219); // payment methods, tables
+$fon_bussines: #2e3d4b; // bussines solution section home page
+$fon_cabinetMenu: #f8f8f8;
+
+//buttons
+
+$color_button: #ffffff;
+$fon_button: $fon_green;
+$fontSize_button: $fontSize_name;
+
+// buttons with bakcground transparent
+$color_button-tran: $color_second; // text and border color
+$fon_button-tran: transparent;
+
+// inputs
+
+$color_border_input: #b5b6ba;
+$color_input: #62646a;
+$height_input: 34px;
+$color_input-focus: $color_second;
+
+// fonts
+
+$cormorant: "Roboto";
+
+// header
+
+$height_header: 70px;
+$fontSize_header: $fontSize_name;
+$fon_burger: $fon_green;
+$fon_header: $fonBody;
+
+//footer
+
+$fon_footer: rgb(242, 243, 244);
+
+// filter container
+
+$fon_filter: $fonBody;
+$fon_filter-header: $fon_additional;
+$fon_deliverBox: $fon_green;

@@ -1,0 +1,96 @@
+.footer {
+  background: $fon_footer;
+  padding: 60px 0;
+
+  &__accordion {
+    margin: 0 -15px;
+  }
+  .logo {
+    margin-bottom: 30px;
+  }
+  &__text {
+    text-align: left;
+    font-size: $fontSize_main;
+    color: $color_main;
+    line-height: 1.3;
+    opacity: 0.7;
+    margin-top: 30px;
+  }
+  &__card-body {
+    padding: 0px 10px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    a {
+      display: block;
+      line-height: 25px;
+    }
+  }
+  &__card-body--active {
+    height: auto;
+    opacity: 1;
+  }
+  &__button {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    line-height: 40px;
+    font-size: 20px;
+
+    svg {
+      transition: transform 0.3s ease;
+      transform: rotate(90deg);
+    }
+  }
+  &__button--active svg {
+    transform: rotate(270deg);
+  }
+}
+
+.prefooter {
+  text-align: center;
+  padding: 10px 0;
+  opacity: 0.5;
+  padding-bottom: $height_header + 10;
+}
+
+@media (min-width: 767px) {
+  .footer {
+    padding: 100px 0;
+    &__accordion {
+      justify-content: space-around;
+    }
+    &__card {
+      margin-top: 30px;
+    }
+    .logo {
+      margin-bottom: 0;
+      text-align: center;
+    }
+    &__text {
+      margin-top: 60px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__card-body {
+      padding: 0px;
+      height: auto;
+      overflow: hidden;
+      opacity: 1;
+    }
+    &__button {
+      svg {
+        opacity: 0;
+      }
+    }
+  }
+
+  .prefooter {
+    padding: 10px 0;
+  }
+}

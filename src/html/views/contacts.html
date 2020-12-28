@@ -1,0 +1,95 @@
+<%= _.template(require('./../includes/head.html').default)(data) %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<main class="contacts">
+  <section class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="contacts__title title">
+            Contacts
+          </h1>
+        </div>
+        <div class="col-lg-6 col-12 contacts__left">
+          <div class="contacts__bloc">
+            <h3 class="contacts__label">
+              Обслуживание клиентов, обратная связь и предложения:
+            </h3>
+            <p class="contacts__text text">
+              Поддержка пользователей сайта:
+              <a class="link" href="support@genesis-stars.com"
+                >support@genesis-stars.com</a
+              >
+            </p>
+          </div>
+          <div class="contacts__bloc">
+            <h3 class="contacts__label">
+              Партнерство:
+            </h3>
+            <p class="contacts__text text">
+              Если Вы являетесь экспертом в области астрологии и эзотерики
+              <a class="link" href="hr@genesis-stars.com"
+                >hr@genesis-stars.com</a
+              >
+            </p>
+          </div>
+          <div class="contacts__bloc">
+            <h3 class="contacts__label">
+              Корпоративный адрес:
+            </h3>
+            <p class="contacts__text text">
+              Eisiskiu Sodu 18-oji street, 11, LT-02194, Vilnius, Lithuania
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 contacts__right">
+          <div class="contacts__video">
+            <iframe
+              width="988"
+              height="560"
+              src="https://www.youtube.com/embed/oziYC4FMzO8?autoplay=0"
+              frameborder="0"
+              allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+          </div>
+          <h3 class="contacts__label">
+            Отзывы наших пользователей
+          </h3>
+          <div class="contacts__bloc">
+            <p class="contacts__name">
+              Камила
+            </p>
+            <p class="contacts__age">24 года</p>
+            <p class="contacts__text text">
+              Очень благодарна..Спасибо вам большое..Всем советую обращаться
+              именно к Анне..
+            </p>
+          </div>
+          <div class="contacts__bloc">
+            <p class="contacts__name">
+              Камила
+            </p>
+            <p class="contacts__age">24 года</p>
+            <p class="contacts__text text">
+              Очень благодарна..Спасибо вам большое..Всем советую обращаться
+              именно к Анне..
+            </p>
+          </div>
+          <div class="contacts__bloc">
+            <p class="contacts__name">
+              Камила
+            </p>
+            <p class="contacts__age">24 года</p>
+            <p class="contacts__text text">
+              Очень благодарна..Спасибо вам большое..Всем советую обращаться
+              именно к Анне..
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %> <%=
+_.template(require('./../includes/scripts.html').default)(data) %>

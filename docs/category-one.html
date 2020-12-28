@@ -1,0 +1,1872 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="nofollow,noindex" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Loungewear</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.bundle.css" />
+  </head>
+
+  <body>
+    <div id="cover">
+      <header class="header" id="header">
+        <div class="container">
+          <div class="header__row row">
+            <div class="col-auto">
+              <button class="burger" id="burger">
+                <div class="burger-icon"></div>
+              </button>
+            </div>
+            <a href="/" class="logo col-auto">Logo</a>
+
+            <!-- if unlogged user -->
+            <button type="button" data-toggle="modal" data-target="auth" class="header__profile-button col-auto">
+              <div>
+                <img src="https://genesis-stars.com/local/assets/img/user_icon.png" alt="" />
+              </div>
+              <span class="header__name-desk">Login</span>
+            </button>
+
+            <!-- if user is logged -->
+            <button id="headerCabinetButton" type="button" class="header__profile-button col-auto">
+              <img src="https://genesis-stars.com/local/assets/img/user_icon.png" alt="" />
+              <span class="header__name-desk"
+                >Iov Albu
+
+                <div class="header__cabinet-desk">
+                  <a href="personal-info.html" class="header__item">Мой профиль</a>
+                  <a href="#" class="header__item">Мои заказы</a>
+                  <a href="messages.html" class="header__item">Мои сообщения</a>
+                  <a href="notifications.html" class="header__item">Notifications</a>
+                  <a href="#" class="header__item">Мои звонки</a>
+                  <a href="invoices.html" class="header__item">Invoices</a>
+                  <a href="#" class="header__item">Мои чаты</a>
+                  <a href="#" class="header__item">Подписки</a>
+                  <a href="expert-step-2.html" class="header__item">Devino Expert</a>
+                  <a href="#" class="header__item active">Пополнить счет</a>
+                  <a href="#" class="header__item">Помощь</a>
+                  <a href="/" class="header__item">Выход</a>
+                </div>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="header__cabinet-bottom" id="header__cabinet-bottom">
+          <div class="container header__cabinet-bottom-inner">
+            <div class="header__cabinet-bottom-item">
+              <a href="/" class="header__cabinet-bottom-link active">
+                <span class="header__cabinet-bottom-icon">
+                  <i class="fas fa-home"></i>
+                </span>
+                <span class="header__cabinet-bottom-label">Home</span>
+              </a>
+            </div>
+            <div class="header__cabinet-bottom-item">
+              <a href="messages.html" class="header__cabinet-bottom-link">
+                <span class="header__cabinet-bottom-icon">
+                  <i class="fas fa-envelope-square"></i>
+                </span>
+                <span class="header__cabinet-bottom-label">Chats</span>
+              </a>
+            </div>
+            <div class="header__cabinet-bottom-item">
+              <a href="#" class="header__cabinet-bottom-link">
+                <span class="header__cabinet-bottom-icon">
+                  <i class="fas fa-phone-square"></i>
+                </span>
+                <span class="header__cabinet-bottom-label">Calls</span>
+              </a>
+            </div>
+            <div class="header__cabinet-bottom-item">
+              <a href="notifications.html" class="header__cabinet-bottom-link">
+                <span class="header__cabinet-bottom-icon">
+                  <i class="fas fa-bell"></i>
+                </span>
+                <span class="header__cabinet-bottom-label">Notifications</span>
+              </a>
+            </div>
+            <div class="header__cabinet-bottom-item">
+              <a href="#" class="header__cabinet-bottom-link">
+                <span class="header__cabinet-bottom-icon">
+                  <i class="fas fa-bars"></i>
+                </span>
+                <span class="header__cabinet-bottom-label">Cabinet</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="menu" class="header__menu">
+          <span class="header__menu--close" id="closeMenu">&times;</span>
+          <div class="header__item header__settings">
+            MD / RO / <img src="img/icons/ro.png" alt="" />
+            <span class="header__space">|</span>
+            <span &__settings-button>Modifica</span>
+          </div>
+          <div class="header__item">
+            <div class="header__button">
+              <span>
+                Catalog de servicii
+              </span>
+              <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="header__submenu">
+              <div class="header__back">
+                <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                  ></path>
+                </svg>
+                <span>Back</span>
+              </div>
+              <a href="#" class="header__item">Serviciu 1</a>
+              <a href="#" class="header__item">Serviciu 2</a>
+              <a href="#" class="header__item">Serviciu 3</a>
+              <a href="#" class="header__item">Serviciu 4</a>
+            </div>
+          </div>
+          <div class="header__item">
+            <div class="header__button">
+              <span>
+                Domenii de serviciu
+              </span>
+              <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="header__submenu">
+              <div class="header__back">
+                <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                  ></path>
+                </svg>
+                <span>Back</span>
+              </div>
+              <a href="#" class="header__item">Domeniu de serviciu 1</a>
+              <a href="#" class="header__item">Checkout</a>
+              <div class="header__item">
+                <div class="header__button">
+                  <span>
+                    Catalog de servicii
+                  </span>
+                  <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="header__submenu">
+                  <div class="header__back">
+                    <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                      ></path>
+                    </svg>
+                    <span>Back</span>
+                  </div>
+                  <a href="#" class="header__item">Serviciu 1</a>
+                  <a href="#" class="header__item">Serviciu 2</a>
+                  <a href="#" class="header__item">Serviciu 3</a>
+                  <a href="#" class="header__item">Serviciu 4</a>
+                </div>
+              </div>
+              <a href="#" class="header__item">Domeniu de serviciu 2</a>
+              <a href="#" class="header__item">Domeniu de serviciu 3</a>
+              <a href="#" class="header__item">Domeniu de serviciu 4</a>
+            </div>
+          </div>
+          <div class="header__item">
+            <div class="header__button">
+              <span>
+                Pachete de servicii
+              </span>
+              <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="header__submenu">
+              <div class="header__back">
+                <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                  ></path>
+                </svg>
+                <span>Back</span>
+              </div>
+              <a href="#" class="header__item">Pachet de serviciu 1</a>
+              <a href="#" class="header__item">Pachet de serviciu 2</a>
+              <a href="#" class="header__item">Pachet de serviciu 3</a>
+              <a href="#" class="header__item">Pachet de serviciu 4</a>
+            </div>
+          </div>
+          <a href="category-one.html" class="header__item">One category</a>
+          <a href="orders.html" class="header__item">Orders</a>
+          <a href="checkout.html" class="header__item">Checkout</a>
+          <a href="one-product.html" class="header__item">One product</a>
+          <a href="one-service.html" class="header__item">One service</a>
+          <a href="category-all.html" class="header__item">All category</a>
+          <a href="#" class="header__item">Devino expert</a>
+          <a href="about.html" class="header__item">Despre</a>
+          <a href="contacts.html" class="header__item">Contacts</a>
+          <a href="#" class="button button-white">
+            Account
+          </a>
+          <div class="header__item">
+            <div class="header__button">
+              <span>
+                Support & Info
+              </span>
+              <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="header__submenu">
+              <div class="header__back">
+                <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                  ></path>
+                </svg>
+                <span>Back</span>
+              </div>
+              <a href="#" class="header__item">Contacts</a>
+              <a href="#" class="header__item">Support</a>
+              <a href="#" class="header__item">Information</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__cabinet cabinet" id="headerCabinet">
+          <div class="cabinet__inner">
+            <div class="cabinet__header">
+              <button type="button" id="closeCabinet" class="cabinet__close">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <p class="cabinet__title">
+                My profile
+              </p>
+            </div>
+            <div class="cabinet__profile">
+              <div class="cabinet__avatar">
+                <img src="https://genesis-stars.com/local/assets/img/user_icon.png" alt="" />
+              </div>
+              <div class="cabinet__info">
+                <div class="cabinet__name">Iov Albu</div>
+                <p class="cabinet__wallet">На Вашем счету: <span>0 rub.</span></p>
+              </div>
+            </div>
+            <div class="cabinet__bloc">
+              <p class="cabinet__bloc-title">
+                Settings
+              </p>
+              <a href="personal-info.html" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-user-alt"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  My profile and settings
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
+
+              <a href="my-photo.html" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-camera"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  My photo
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
+              <a href="my-subscribes.html" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-ellipsis-v"></i>
+                  <i class="fas fa-bars"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  My subscribe
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
+            </div>
+            <div class="cabinet__bloc">
+              <p class="cabinet__bloc-title">
+                Ваш личный счет
+              </p>
+              <a href="#" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-wallet"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  Выписка по счету
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
+
+              <a href="charge.html" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-money-bill-wave-alt"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  Пополнить счет
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
+              <a href="bonus.html" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-percentage"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  Накопленные бонусы
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
+            </div>
+            <div class="cabinet__bloc">
+              <p class="cabinet__bloc-title">
+                Дополнительные возможности
+              </p>
+              <a href="#" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-question-circle"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  Помощь
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
+
+              <a href="#" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-sign-out-alt"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  Выйти
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="catOne">
+        <section class="search">
+          <div class="container">
+            <div class="search__container">
+              <span class="search__icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.8906 14.6531L12.0969 10.8594C12.025 10.7875 11.9313 10.75 11.8313 10.75H11.4187C12.4031 9.60938 13 8.125 13 6.5C13 2.90937 10.0906 0 6.5 0C2.90937 0 0 2.90937 0 6.5C0 10.0906 2.90937 13 6.5 13C8.125 13 9.60938 12.4031 10.75 11.4187V11.8313C10.75 11.9313 10.7906 12.025 10.8594 12.0969L14.6531 15.8906C14.8 16.0375 15.0375 16.0375 15.1844 15.8906L15.8906 15.1844C16.0375 15.0375 16.0375 14.8 15.8906 14.6531ZM6.5 11.5C3.7375 11.5 1.5 9.2625 1.5 6.5C1.5 3.7375 3.7375 1.5 6.5 1.5C9.2625 1.5 11.5 3.7375 11.5 6.5C11.5 9.2625 9.2625 11.5 6.5 11.5Z"
+                  ></path>
+                </svg>
+              </span>
+              <input class="search__input" type="text" placeholder="Find Services" />
+            </div>
+          </div>
+        </section>
+        <section class="breadcrumbs">
+          <div class="container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                  <span class="breadcrumbs__icon">
+                    <svg
+                      style="fill:currentColor"
+                      width="8"
+                      height="16"
+                      viewBox="0 0 8 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                      ></path>
+                    </svg>
+                  </span>
+                  Home
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                  <span class="breadcrumbs__icon">
+                    <svg
+                      style="fill:currentColor"
+                      width="8"
+                      height="16"
+                      viewBox="0 0 8 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                      ></path>
+                    </svg>
+                  </span>
+                  Home
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="catOne__header">
+          <div class="container">
+            <h1 class="catOne__title title">
+              Logo Design
+            </h1>
+            <p class="text">
+              Stand out from the crowd with a logo that fits your brand personality.
+            </p>
+          </div>
+        </section>
+        <section class="catOne__filter-buttons">
+          <div class="container">
+            <div class="filter__buttons-container" id="filterButtonsContainer">
+              <button id="filterButton" class="filterButton">
+                <div class="filterButton__icon">
+                  <i class="fas fa-filter"></i>
+                </div>
+                Filter Results
+              </button>
+              <button id="sortButton" class="sortButton">
+                <div class="sortButton__icon">
+                  <i class="fas fa-sort"></i>
+                </div>
+                Sort
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="catOne__list">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-4 col-lg-6 col-12">
+                <div class="catOne__item">
+                  <div class="catOne__item-header">
+                    <div class="catOne__item-header-image-container image-conteainer">
+                      <img
+                        src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/136170246/original/6760913afee6a0d39756b09fb51b2f06aedf4aa2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="catOne__item-description">
+                      <a class="catOne__item-name">
+                        Design 2 Classic Hipster, Retro Vintage Logo Design asdfas asfds
+                      </a>
+                      <p class="rating">
+                        <svg
+                          style="color: #fbce19;"
+                          role="img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                          data-fa-i2svg=""
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                          ></path>
+                        </svg>
+                        <span>Rating 4.79</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="catOne__item-footer">
+                    <div class="catOne__item-seller">
+                      <div class="catOne__item-seller-image-container">
+                        <img
+                          src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/e5860f732b6dfe0b536323be807ec955-1582523912361/57913d21-565f-4d17-b508-871c96f622b0.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="catOne__item-seller-about">
+                        <div class="catOne__item-seller-name">
+                          logoflow
+                        </div>
+                        <div class="catOne__item-seller-level">
+                          Level 2 seller
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catOne__item-startPrice">
+                      <span>strating at</span> <span class="startPrice">$10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-12">
+                <div class="catOne__item">
+                  <div class="catOne__item-header">
+                    <div class="catOne__item-header-image-container image-conteainer">
+                      <img
+                        src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/136170246/original/6760913afee6a0d39756b09fb51b2f06aedf4aa2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="catOne__item-description">
+                      <a class="catOne__item-name">
+                        Design 2 Classic Hipster, Retro Vintage Logo Design asdfas asfds
+                      </a>
+                      <p class="rating">
+                        <svg
+                          style="color: #fbce19;"
+                          role="img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                          data-fa-i2svg=""
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                          ></path>
+                        </svg>
+                        <span>Rating 4.79</span>
+                        <span class="rating__count">
+                          (96)
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="catOne__item-footer">
+                    <div class="catOne__item-seller">
+                      <div class="catOne__item-seller-image-container">
+                        <img
+                          src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/e5860f732b6dfe0b536323be807ec955-1582523912361/57913d21-565f-4d17-b508-871c96f622b0.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="catOne__item-seller-about">
+                        <div class="catOne__item-seller-name">
+                          logoflow
+                        </div>
+                        <div class="catOne__item-seller-level"></div>
+                      </div>
+                    </div>
+                    <div class="catOne__item-startPrice">
+                      <span>strating at</span> <span class="startPrice">$10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-12">
+                <div class="catOne__item">
+                  <div class="catOne__item-header">
+                    <div class="catOne__item-header-image-container image-conteainer">
+                      <img
+                        src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/136170246/original/6760913afee6a0d39756b09fb51b2f06aedf4aa2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="catOne__item-description">
+                      <a class="catOne__item-name">
+                        Design 2 Classic Hipster, Retro Vintage Logo Design asdfas asfds
+                      </a>
+                      <p class="rating">
+                        <svg
+                          style="color: #fbce19;"
+                          role="img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                          data-fa-i2svg=""
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                          ></path>
+                        </svg>
+                        <span>Rating 4.79</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="catOne__item-footer">
+                    <div class="catOne__item-seller">
+                      <div class="catOne__item-seller-image-container">
+                        <img
+                          src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/e5860f732b6dfe0b536323be807ec955-1582523912361/57913d21-565f-4d17-b508-871c96f622b0.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="catOne__item-seller-about">
+                        <div class="catOne__item-seller-name">
+                          logoflow
+                        </div>
+                        <div class="catOne__item-seller-level">
+                          Level 2 seller
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catOne__item-startPrice">
+                      <span>strating at</span> <span class="startPrice">$10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6 col-12">
+                <div class="catOne__item">
+                  <div class="catOne__item-header">
+                    <div class="catOne__item-header-image-container image-conteainer">
+                      <img
+                        src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/136170246/original/6760913afee6a0d39756b09fb51b2f06aedf4aa2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="catOne__item-description">
+                      <a class="catOne__item-name">
+                        Design 2 Classic Hipster, Retro Vintage Logo Design asdfas asfds
+                      </a>
+                      <p class="rating">
+                        <svg
+                          style="color: #fbce19;"
+                          role="img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                          data-fa-i2svg=""
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                          ></path>
+                        </svg>
+                        <span>Rating 4.79</span>
+                        <span class="rating__count">
+                          (96)
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="catOne__item-footer">
+                    <div class="catOne__item-seller">
+                      <div class="catOne__item-seller-image-container">
+                        <img
+                          src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/e5860f732b6dfe0b536323be807ec955-1582523912361/57913d21-565f-4d17-b508-871c96f622b0.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="catOne__item-seller-about">
+                        <div class="catOne__item-seller-name">
+                          logoflow
+                        </div>
+                        <div class="catOne__item-seller-level"></div>
+                      </div>
+                    </div>
+                    <div class="catOne__item-startPrice">
+                      <span>strating at</span> <span class="startPrice">$10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="experts">
+          <div class="container">
+            <div class="experts__inner">
+              <h3 class="experts__title title">
+                Experts online
+              </h3>
+              <div class="experts__slider slider">
+                <div class="experts__slide">
+                  <div class="experts__header">
+                    <div class="experts__avatar">
+                      <img
+                        src="https://genesis-stars.com/upload/iblock/2e0/2e08b6447edae452330e06404d43adc6.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="experts__description">
+                      <p class="experts__status">
+                        Online
+                      </p>
+                      <a href="#" class="experts__name">Anastasia Obertinskaya</a>
+                      <p class="experts__domains">
+                        Lorem ipsum dolor sit amet consectetur.
+                      </p>
+                      <p class="experts__rating rating">
+                        <svg
+                          style="color: #fbce19;"
+                          role="img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                          data-fa-i2svg=""
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                          ></path>
+                        </svg>
+                        <span>Rating 4.79</span>
+                        <span class="experts__rating-count rating__count">
+                          (96 evaluations)
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="experts__actions">
+                    <p class="experts__freeCons">
+                      Free first consultation
+                    </p>
+                    <div class="price">
+                      <span class="price__discount">
+                        10 euro/min
+                      </span>
+                      <span>
+                        0 euro/min
+                      </span>
+                    </div>
+                    <div class="experts__buttons">
+                      <a href="#" class="experts__button button">
+                        <span>
+                          Request
+                        </span>
+                      </a>
+                      <a href="#" class="experts__button button button-white">
+                        <div class="button__icon">
+                          <svg
+                            style="margin-right: 10px;"
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="phone"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            data-fa-i2svg=""
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <span>
+                          Call
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="experts__slide">
+                  <div class="experts__header">
+                    <div class="experts__avatar">
+                      <img
+                        src="https://genesis-stars.com/upload/iblock/2e0/2e08b6447edae452330e06404d43adc6.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="experts__description">
+                      <p class="experts__status">
+                        Online
+                      </p>
+                      <a href="#" class="experts__name">Anastasia Obertinskaya</a>
+                      <p class="experts__domains">
+                        Lorem ipsum dolor sit amet consectetur.
+                      </p>
+                      <p class="experts__rating rating">
+                        <svg
+                          style="color: #fbce19;"
+                          role="img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                          data-fa-i2svg=""
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                          ></path>
+                        </svg>
+                        <span>Rating 4.79</span>
+                        <span class="experts__rating-count rating__count">
+                          (96 evaluations)
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="experts__actions">
+                    <p class="experts__freeCons">
+                      Free first consultation
+                    </p>
+                    <div class="price">
+                      <span class="price__discount">
+                        10 euro/min
+                      </span>
+                      <span>
+                        0 euro/min
+                      </span>
+                    </div>
+                    <div class="experts__buttons">
+                      <a href="#" class="experts__button button">
+                        <span>
+                          Request
+                        </span>
+                      </a>
+                      <a href="#" class="experts__button button button-white">
+                        <div class="button__icon">
+                          <svg
+                            style="margin-right: 10px;"
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="phone"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            data-fa-i2svg=""
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <span>
+                          Call
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="experts__slide">
+                  <div class="experts__header">
+                    <div class="experts__avatar">
+                      <img
+                        src="https://genesis-stars.com/upload/iblock/2e0/2e08b6447edae452330e06404d43adc6.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="experts__description">
+                      <p class="experts__status">
+                        Online
+                      </p>
+                      <a href="#" class="experts__name">Anastasia Obertinskaya</a>
+                      <p class="experts__domains">
+                        Lorem ipsum dolor sit amet consectetur.
+                      </p>
+                      <p class="experts__rating rating">
+                        <svg
+                          style="color: #fbce19;"
+                          role="img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                          data-fa-i2svg=""
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                          ></path>
+                        </svg>
+                        <span>Rating 4.79</span>
+                        <span class="experts__rating-count rating__count">
+                          (96 evaluations)
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="experts__actions">
+                    <p class="experts__freeCons">
+                      Free first consultation
+                    </p>
+                    <div class="price">
+                      <span class="price__discount">
+                        10 euro/min
+                      </span>
+                      <span>
+                        0 euro/min
+                      </span>
+                    </div>
+                    <div class="experts__buttons">
+                      <a href="#" class="experts__button button">
+                        <span>
+                          Request
+                        </span>
+                      </a>
+                      <a href="#" class="experts__button button button-white">
+                        <div class="button__icon">
+                          <svg
+                            style="margin-right: 10px;"
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="phone"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            data-fa-i2svg=""
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <span>
+                          Call
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="experts__slide">
+                  <div class="experts__header">
+                    <div class="experts__avatar">
+                      <img
+                        src="https://genesis-stars.com/upload/iblock/2e0/2e08b6447edae452330e06404d43adc6.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="experts__description">
+                      <p class="experts__status">
+                        Online
+                      </p>
+                      <a href="#" class="experts__name">Anastasia Obertinskaya</a>
+                      <p class="experts__domains">
+                        Lorem ipsum dolor sit amet consectetur.
+                      </p>
+                      <p class="experts__rating rating">
+                        <svg
+                          style="color: #fbce19;"
+                          role="img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                          data-fa-i2svg=""
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                          ></path>
+                        </svg>
+                        <span>Rating 4.79</span>
+                        <span class="experts__rating-count rating__count">
+                          (96 evaluations)
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="experts__actions">
+                    <p class="experts__freeCons">
+                      Free first consultation
+                    </p>
+                    <div class="price">
+                      <span class="price__discount">
+                        10 euro/min
+                      </span>
+                      <span>
+                        0 euro/min
+                      </span>
+                    </div>
+                    <div class="experts__buttons">
+                      <a href="#" class="experts__button button">
+                        <span>
+                          Request
+                        </span>
+                      </a>
+                      <a href="#" class="experts__button button button-white">
+                        <div class="button__icon">
+                          <svg
+                            style="margin-right: 10px;"
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fas"
+                            data-icon="phone"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            data-fa-i2svg=""
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <span>
+                          Call
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="catOne__text">
+          <div class="container">
+            <h4 class="sub-title">Some Title</h4>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus placeat commodi ducimus iste
+              exercitationem reprehenderit nesciunt. Ullam libero impedit deserunt?
+            </p>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, molestias.
+            </p>
+          </div>
+        </section>
+        <section class="catOne__paymentMethods paymentMethods">
+          <div class="container">
+            <h4 class="paymentMethods__sub-title sub-title">
+              Incarca contul
+            </h4>
+            <div class="paymentMethods__items">
+              <div class="paymentMethods__item">
+                <img src="https://genesis-stars.com/local/assets/img/ico_pay/visa-master-ico.svg" alt="" />
+              </div>
+              <div class="paymentMethods__item">
+                <img src="https://genesis-stars.com/local/assets/img/ico_pay/privat-ico.svg" alt="" />
+              </div>
+              <div class="paymentMethods__item">
+                <img src="https://genesis-stars.com/local/assets/img/ico_pay/mir-ico.svg" alt="" />
+              </div>
+              <div class="paymentMethods__item">
+                <img src="https://genesis-stars.com/local/assets/img/ico_pay/webmoney-ico.svg" alt="" />
+              </div>
+              <div class="paymentMethods__item">
+                <img src="https://genesis-stars.com/local/assets/img/ico_pay/qiwi-ico.svg" alt="" />
+              </div>
+              <div class="paymentMethods__item">
+                <img src="https://genesis-stars.com/local/assets/img/ico_pay/yandex-ico.svg" alt="" />
+              </div>
+            </div>
+            <button class="paymentMethods__button button" type="button">
+              Incarca contul
+            </button>
+          </div>
+        </section>
+
+        <!-- sort fixed -->
+
+        <div id="sort" class="filter">
+          <form class="filter__inner">
+            <div class="filter__option">
+              <div class="filter__option-title">
+                <span>Sort by</span>
+                <span id="closeSort">&times;</span>
+              </div>
+              <div class="filter__check-container">
+                <label class="checkContainer">
+                  Recommended
+                  <input type="radio" name="statusSeller" />
+                  <span class="checkContainer__mark">
+                    <svg
+                      style="fill:currentColor"
+                      width="11"
+                      height="9"
+                      viewBox="0 0 11 9"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <div class="filter__check-container">
+                <label class="checkContainer">
+                  Best Selling
+                  <input type="radio" name="statusSeller" />
+                  <span class="checkContainer__mark">
+                    <svg
+                      style="fill:currentColor"
+                      width="11"
+                      height="9"
+                      viewBox="0 0 11 9"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <div class="filter__check-container">
+                <label class="checkContainer">
+                  Newest Arrivals
+                  <input type="radio" name="statusSeller" />
+                  <span class="checkContainer__mark">
+                    <svg
+                      style="fill:currentColor"
+                      width="11"
+                      height="9"
+                      viewBox="0 0 11 9"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="filter__footer">
+              <button class="button" type="submit">
+                Show Results
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- filter fixed -->
+        <div id="filter" class="filter">
+          <form class="filter__inner" id="formFilter">
+            <div class="filter__header">
+              <button type="button" id="closeFilter" class="filter__back">
+                &times;
+              </button>
+              <div class="filter__name">Set Filters</div>
+              <button id="clearFormFilter" type="button" class="filter__clear">
+                Clear All
+              </button>
+            </div>
+            <div class="filter__options">
+              <div class="filter__option">
+                <div class="filter__option-title">
+                  Delivery Time
+                </div>
+                <div class="filter__inputs-wrapper">
+                  <label class="radioContainer">
+                    <input checked type="radio" name="deleveryTime" />
+                    <span class="radioContainer__mark">
+                      Express Delivery 24H
+                    </span>
+                  </label>
+                  <label class="radioContainer">
+                    <input type="radio" name="deleveryTime" />
+                    <span class="radioContainer__mark">
+                      Up to 3 days
+                    </span>
+                  </label>
+                  <label class="radioContainer">
+                    <input type="radio" name="deleveryTime" />
+                    <span class="radioContainer__mark">
+                      Up to 7 days
+                    </span>
+                  </label>
+                  <label class="radioContainer">
+                    <input type="radio" name="deleveryTime" />
+                    <span class="radioContainer__mark">
+                      Anytime
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="filter__option">
+                <div class="filter__option-title">
+                  Budget
+                </div>
+                <div class="filter__price-wrapper">
+                  <label for="minPrice">$</label>
+                  <input type="text" name="minPrice" id="minPrice" />
+                  <label for="maxPrice">To $</label>
+                  <input type="text" name="maxPrice" id="maxPrice" />
+                </div>
+              </div>
+              <div class="filter__option">
+                <div class="filter__option-title">
+                  Seller Availability
+                </div>
+                <div class="filter__check-container">
+                  <label class="checkContainer">
+                    Online
+                    <input type="checkbox" name="statusSeller" />
+                    <span class="checkContainer__mark">
+                      <svg
+                        style="fill:currentColor"
+                        width="11"
+                        height="9"
+                        viewBox="0 0 11 9"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </label>
+                  <span class="filter__count">(3456)</span>
+                </div>
+              </div>
+              <div class="filter__option">
+                <div class="filter__option-title">
+                  Logo Style
+                </div>
+                <div class="filter__items">
+                  <div class="filter__item filter__check-container">
+                    <label class="checkContainer">
+                      Minimalist
+                      <input type="checkbox" name="statusSeller" />
+                      <span class="checkContainer__mark">
+                        <svg
+                          style="fill:currentColor"
+                          width="11"
+                          height="9"
+                          viewBox="0 0 11 9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <span class="filter__count">(156)</span>
+                  </div>
+                  <div class="filter__item filter__check-container">
+                    <label class="checkContainer">
+                      Freestyle
+                      <input type="checkbox" name="statusSeller" />
+                      <span class="checkContainer__mark">
+                        <svg
+                          style="fill:currentColor"
+                          width="11"
+                          height="9"
+                          viewBox="0 0 11 9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <span class="filter__count">(3456)</span>
+                  </div>
+                  <div class="filter__item filter__check-container">
+                    <label class="checkContainer">
+                      Mascot
+                      <input type="checkbox" name="statusSeller" />
+                      <span class="checkContainer__mark">
+                        <svg
+                          style="fill:currentColor"
+                          width="11"
+                          height="9"
+                          viewBox="0 0 11 9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <span class="filter__count">(456)</span>
+                  </div>
+                  <div data-show="false" class="filter__item filter__check-container">
+                    <label class="checkContainer">
+                      Minimalist
+                      <input type="checkbox" name="statusSeller" />
+                      <span class="checkContainer__mark">
+                        <svg
+                          style="fill:currentColor"
+                          width="11"
+                          height="9"
+                          viewBox="0 0 11 9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <span class="filter__count">(156)</span>
+                  </div>
+                  <div data-show="false" class="filter__item filter__check-container">
+                    <label class="checkContainer">
+                      Freestyle
+                      <input type="checkbox" name="statusSeller" />
+                      <span class="checkContainer__mark">
+                        <svg
+                          style="fill:currentColor"
+                          width="11"
+                          height="9"
+                          viewBox="0 0 11 9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <span class="filter__count">(3456)</span>
+                  </div>
+                  <div data-show="false" class="filter__item filter__check-container">
+                    <label class="checkContainer">
+                      Mascot
+                      <input type="checkbox" name="statusSeller" />
+                      <span class="checkContainer__mark">
+                        <svg
+                          style="fill:currentColor"
+                          width="11"
+                          height="9"
+                          viewBox="0 0 11 9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <span class="filter__count">(456)</span>
+                  </div>
+                  <button data-status="false" type="button" class="filter__more">
+                    + Show More
+                  </button>
+                </div>
+              </div>
+              <div class="filter__option">
+                <div class="filter__option-title">
+                  File Format
+                </div>
+                <div class="filter__items">
+                  <div class="filter__item filter__check-container">
+                    <label class="checkContainer">
+                      JPG
+                      <input type="checkbox" name="statusSeller" />
+                      <span class="checkContainer__mark">
+                        <svg
+                          style="fill:currentColor"
+                          width="11"
+                          height="9"
+                          viewBox="0 0 11 9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <span class="filter__count">(156)</span>
+                  </div>
+                  <div class="filter__item filter__check-container">
+                    <label class="checkContainer">
+                      PNG
+                      <input type="checkbox" name="statusSeller" />
+                      <span class="checkContainer__mark">
+                        <svg
+                          style="fill:currentColor"
+                          width="11"
+                          height="9"
+                          viewBox="0 0 11 9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <span class="filter__count">(3456)</span>
+                  </div>
+                  <div class="filter__item filter__check-container">
+                    <label class="checkContainer">
+                      AI (Illustrator)
+                      <input type="checkbox" name="statusSeller" />
+                      <span class="checkContainer__mark">
+                        <svg
+                          style="fill:currentColor"
+                          width="11"
+                          height="9"
+                          viewBox="0 0 11 9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <span class="filter__count">(456)</span>
+                  </div>
+                  <div data-show="false" class="filter__item filter__check-container">
+                    <label class="checkContainer">
+                      JPG
+                      <input type="checkbox" name="statusSeller" />
+                      <span class="checkContainer__mark">
+                        <svg
+                          style="fill:currentColor"
+                          width="11"
+                          height="9"
+                          viewBox="0 0 11 9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <span class="filter__count">(156)</span>
+                  </div>
+                  <div data-show="false" class="filter__item filter__check-container">
+                    <label class="checkContainer">
+                      PNG
+                      <input type="checkbox" name="statusSeller" />
+                      <span class="checkContainer__mark">
+                        <svg
+                          style="fill:currentColor"
+                          width="11"
+                          height="9"
+                          viewBox="0 0 11 9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <span class="filter__count">(3456)</span>
+                  </div>
+                  <div data-show="false" class="filter__item filter__check-container">
+                    <label class="checkContainer">
+                      AI (Illustrator)
+                      <input type="checkbox" name="statusSeller" />
+                      <span class="checkContainer__mark">
+                        <svg
+                          style="fill:currentColor"
+                          width="11"
+                          height="9"
+                          viewBox="0 0 11 9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <span class="filter__count">(456)</span>
+                  </div>
+                  <button type="button" class="filter__more">+ Show More</button>
+                </div>
+              </div>
+            </div>
+            <div class="filter__footer">
+              <button class="button" type="submit">
+                Show Results
+              </button>
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__accordion row">
+            <div class="col-12">
+              <a href="/" class="logo">Logo</a>
+            </div>
+            <div class="footer__card col-lg-auto col-md-4 col-12">
+              <button class="footer__button">
+                <span>Categories</span>
+                <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                  ></path>
+                </svg>
+              </button>
+              <div class="footer__card-body">
+                <a href="#">Item 1</a>
+                <a href="#">Item 2</a>
+                <a href="#">Item 3</a>
+                <a href="#">Item 4</a>
+              </div>
+            </div>
+            <div class="footer__card col-lg-auto col-md-4 col-12">
+              <button class="footer__button">
+                <span>About</span>
+                <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                  ></path>
+                </svg>
+              </button>
+              <div class="footer__card-body">
+                <a href="about.html">About Us</a>
+                <a href="contacts.html">Contact Us</a>
+                <a href="blog.html">Blog</a>
+                <a href="faq.html">FAQ</a>
+              </div>
+            </div>
+            <div class="footer__card col-lg-auto col-md-4 col-12">
+              <button class="footer__button">
+                <span>Our services</span>
+                <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                  ></path>
+                </svg>
+              </button>
+              <div class="footer__card-body">
+                <a href="free-consultation.html">Free Consultation</a>
+                <a href="video-consultation.html">Video Consultation</a>
+                <a href="services.html">Services</a>
+                <a href="#">Item 4</a>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <p class="footer__text col-xl-8 col-lg-10 col-12">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda consequatur quisquam, quaerat aut
+                  eum iste architecto rem pariatur dolores veniam a magnam id sunt! Nisi, quasi ipsam pariatur
+                  dignissimos perferendis et, unde necessitatibus aut voluptate sed saepe rerum sapiente! Dolor?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="container">
+        <p class="prefooter">
+          @2020 Copyright: All right reserved, Website by Like-Media
+        </p>
+      </div>
+
+      <div class="modal" id="auth">
+        <div class="auth__modal-content modal__content">
+          <div class="modal__close" data-dismiss="modal">&times;</div>
+          <div class="modal__body">
+            <div class="supportMini modal__supportMini">
+              <p class="supportMini__title">Центр поддержки клиентов</p>
+              <a href="tel:0800331721" class="supportMini__phone">0-800-331-721</a>
+              <small class="supportMini__hint">Звонок по Украине бесплатный</small>
+            </div>
+            <div class="authTabs">
+              <div class="authTabs__header">
+                <button type="button" class="authTabs__tab active-tab" data-target="loginContainer">
+                  Login
+                </button>
+                <button type="button" class="authTabs__tab" data-target="registerContainer">
+                  Register
+                </button>
+              </div>
+              <div class="authTabs__body">
+                <div class="authTabs__item active-tab" id="loginContainer">
+                  <div class="authTabs__social">
+                    <button
+                      type="button"
+                      class="modal__button authTabs__social-button button button-white gmail-button"
+                    >
+                      <span class="button__icon">
+                        <i class="fab fa-google-plus-g"></i>
+                      </span>
+                      <span>
+                        Войти через учетную запись Google
+                      </span>
+                    </button>
+                    <button type="button" class="modal__button authTabs__social-button facebook-button button">
+                      <span class="button__icon"><i class="fab fa-facebook-f"></i></span>
+                      <span>Войти через учетную запись Facebook</span>
+                    </button>
+                  </div>
+                  <div class="authTabs__border">
+                    <span class="authTabs__border-txt">или</span>
+                  </div>
+
+                  <form action="" class="authTabs__form">
+                    <div class="input-group">
+                      <label for="loginName">Name</label>
+                      <input name="loginName" id="loginName" type="text" value="Iov" />
+                    </div>
+                    <div class="input-group">
+                      <label for="loginPassword">Password</label>
+                      <input name="loginPassword" id="loginPassword" type="password" value="asdfasdf" />
+                    </div>
+                    <div class="authTabs__form-footer">
+                      <label class="checkContainer">
+                        Запомнить меня
+                        <input type="checkbox" name="savePass" />
+                        <span class="checkContainer__mark">
+                          <svg
+                            style="fill:currentColor"
+                            width="11"
+                            height="9"
+                            viewBox="0 0 11 9"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </label>
+                      <button type="button" class="link" data-toggle="modal" data-target="forgetPassword">
+                        Забыли пароль?
+                      </button>
+                    </div>
+                    <button type="submit" class="button modal__button" data-dismiss="modal">
+                      Enter
+                    </button>
+                  </form>
+                </div>
+                <div class="authTabs__item" id="registerContainer">
+                  <div class="authTabs__social">
+                    <button
+                      type="button"
+                      class="modal__button authTabs__social-button button button-white gmail-button"
+                    >
+                      <span class="button__icon">
+                        <i class="fab fa-google-plus-g"></i>
+                      </span>
+                      <span>
+                        Войти через учетную запись Google
+                      </span>
+                    </button>
+                    <button type="button" class="modal__button authTabs__social-button facebook-button button">
+                      <span class="button__icon"><i class="fab fa-facebook-f"></i></span>
+                      <span>Войти через учетную запись Facebook</span>
+                    </button>
+                  </div>
+                  <div class="authTabs__border">
+                    <span class="authTabs__border-txt">или</span>
+                  </div>
+
+                  <form action="" class="authTabs__form">
+                    <div class="input-group">
+                      <label for="registerName">Name</label>
+                      <input name="registerName" id="registerName" type="text" value="Iov" />
+                    </div>
+                    <div class="input-group">
+                      <label for="registerEmail">Email</label>
+                      <input name="registerEmail" id="registerEmail" type="email" />
+                    </div>
+                    <div class="input-group">
+                      <label for="registerPhone">Phone number</label>
+                      <input name="registerPhone" id="registerPhone" type="text" />
+                    </div>
+                    <div class="input-group">
+                      <label for="registerPassword">Your password</label>
+                      <input name="registerPassword" id="registerPassword" type="password" />
+                    </div>
+                    <div class="input-group">
+                      <label for="registerRepeatPassword">Repeat password</label>
+                      <input name="registerRepeatPassword" id="registerRepeatPassword" type="password" />
+                    </div>
+                    <label class="checkContainer margBottom" for="policy">
+                      Я принимаю условия
+                      <a class="link" href="/terms/">пользовательского соглашения</a>
+                      <input type="checkbox" name="policy" id="policy" />
+                      <span class="checkContainer__mark">
+                        <svg
+                          style="fill:currentColor"
+                          width="11"
+                          height="9"
+                          viewBox="0 0 11 9"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.64489 8.10164L0.158292 4.61504C-0.0511769 4.40557 -0.0511769 4.06594 0.158292 3.85645L0.916858 3.09786C1.12633 2.88837 1.46598 2.88837 1.67545 3.09786L4.02419 5.44658L9.05493 0.41586C9.2644 0.206391 9.60405 0.206391 9.81352 0.41586L10.5721 1.17445C10.7816 1.38392 10.7816 1.72355 10.5721 1.93303L4.40348 8.10166C4.19399 8.31113 3.85436 8.31113 3.64489 8.10164V8.10164Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+                    <button type="submit" class="button modal__button" data-dismiss="modal">
+                      Enter
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="modal__additional">
+              <!-- on order button -->
+              <section class="modal__orderSteps orderSteps">
+                <div class="orderSteps__header">
+                  <div class="orderSteps__item active">
+                    <span class="orderSteps__number">1</span>
+                    <span>Registration</span>
+                  </div>
+                  <div class="orderSteps__item">
+                    <span class="orderSteps__number">2</span>
+                    <span>Order</span>
+                  </div>
+                </div>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente distinctio voluptatum libero magnam
+                  omnis assumenda?
+                </p>
+              </section>
+              <section>
+                <h3 class="modal__sub-title sub-title">
+                  Зачем нужно регистрироваться?
+                </h3>
+                <a href="#" class="modal__image-container image-container">
+                  <img
+                    src="https://sg.fiverrcdn.com/press_release/1072/SMB%20-%20Press-Page%20_press_image_1602071713.jpg"
+                    alt=""
+                  />
+                </a>
+                <ul class="whyUsModal">
+                  <li class="whyUsModal__text text">
+                    <span><span class="whyUsModal__number">1</span></span>
+                    <span>Воспользуйтесь первой бесплатной консультацией.</span>
+                  </li>
+                  <li class="whyUsModal__text text">
+                    <span><span class="whyUsModal__number">2</span></span>
+                    <span
+                      >Задавайте вопросы эксперту в личной переписке или общайтесь с экспертом по голосовой или
+                      видео-связи</span
+                    >
+                  </li>
+                  <li class="whyUsModal__text text">
+                    <span>
+                      <span class="whyUsModal__number">3</span>
+                    </span>
+                    <span>Накапливайте скидку и получайте специальные предложения.</span>
+                  </li>
+                </ul>
+              </section>
+              <section class="support">
+                <div class="support__inner">
+                  <h3 class="support__sub-title sub-title center">
+                    У Вас еще есть вопросы?
+                  </h3>
+                  <p class="text center">
+                    Свяжитесь с нашим круглосуточным центром поддержки клиентов.
+                  </p>
+
+                  <div class="support__tel-container">
+                    <img
+                      width="20"
+                      src="data:image/png;base64,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"
+                      alt=""
+                    />
+                    <a href="tel:0800331721" class="support__tel text center">0-800-331-721</a>
+                  </div>
+                  <p class="text center">Звонок по Украине бесплатный</p>
+                  <a href="mailto:support@genesis-stars.com" class="support__mail text center"
+                    >Email: support@genesis-stars.com</a
+                  >
+                  <p class="text center">Telegram: @genesis-stars</p>
+                </div>
+              </section>
+              <section class="modal__paymentMethods paymentMethods">
+                <h4 class="paymentMethods__sub-title sub-title">
+                  Incarca contul
+                </h4>
+                <div class="paymentMethods__items">
+                  <div class="paymentMethods__item">
+                    <img src="https://genesis-stars.com/local/assets/img/ico_pay/visa-master-ico.svg" alt="" />
+                  </div>
+                  <div class="paymentMethods__item">
+                    <img src="https://genesis-stars.com/local/assets/img/ico_pay/privat-ico.svg" alt="" />
+                  </div>
+                  <div class="paymentMethods__item">
+                    <img src="https://genesis-stars.com/local/assets/img/ico_pay/mir-ico.svg" alt="" />
+                  </div>
+                  <div class="paymentMethods__item">
+                    <img src="https://genesis-stars.com/local/assets/img/ico_pay/webmoney-ico.svg" alt="" />
+                  </div>
+                  <div class="paymentMethods__item">
+                    <img src="https://genesis-stars.com/local/assets/img/ico_pay/qiwi-ico.svg" alt="" />
+                  </div>
+                  <div class="paymentMethods__item">
+                    <img src="https://genesis-stars.com/local/assets/img/ico_pay/yandex-ico.svg" alt="" />
+                  </div>
+                </div>
+                <button class="paymentMethods__button button" type="button">
+                  Incarca contul
+                </button>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="forgetPassword">
+        <div class="modal__content">
+          <div class="modal__close" data-dismiss="modal">&times;</div>
+          <div class="modal__body">
+            <div class="modal__flex-container">
+              <h3 class="modal__title">
+                Восстановление пароля
+              </h3>
+              <button type="button" class="modal__link link" data-toggle="modal" data-target="auth">
+                Sign in
+              </button>
+            </div>
+            <p class="text">
+              Контрольная строка для смены пароля будет выслана вам по email.
+            </p>
+            <form action="" class="form__modal">
+              <div class="input-group">
+                <label for="emailForgotPassword">Enter email</label>
+                <input type="email" id="emailForgotPassword" name="emailForgotPassword" />
+              </div>
+              <button type="button" class="modal__button button" data-toggle="modal" data-target="codeForgotPass">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="codeForgotPass">
+        <div class="modal__content">
+          <div class="modal__close" data-dismiss="modal">&times;</div>
+          <div class="modal__body">
+            <div class="modal__flex-container">
+              <h3 class="modal__title">
+                Восстановление пароля
+              </h3>
+              <button type="button" class="modal__link link" data-toggle="modal" data-target="auth">
+                Sign in
+              </button>
+            </div>
+            <p class="text">
+              Introduceti mai jos codul primit in email.
+            </p>
+            <form action="" class="form__modal">
+              <div class="input-group">
+                <label for="textForgotPassword">Enter code</label>
+                <input type="text" id="textForgotPassword" name="textForgotPassword" />
+              </div>
+              <button type="submit" class="modal__button button">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/bundle.js"></script>
+  </body>
+</html>
