@@ -190,6 +190,10 @@ iframe {
   text-transform: uppercase;
   font-weight: 700;
   font-size: $fontSize_title;
+
+  &__image {
+    width: 140px;
+  }
 }
 
 .link {
@@ -309,6 +313,10 @@ select {
   border: 1px solid $color_button-tran;
   background: $fon_button-tran;
   color: $color_button-tran;
+
+  .button__icon {
+    color: $color_second;
+  }
 }
 
 .button.button-showMore {

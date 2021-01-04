@@ -1,196 +1,76 @@
 <header class="header" id="header">
-  <div class="container">
+  <div class="container header__mobile">
     <div class="header__row row">
       <div class="col-auto">
         <button class="burger" id="burger">
           <div class="burger-icon"></div>
         </button>
       </div>
-      <a href="/" class="logo col-auto">Logo</a>
-
-      <!-- if unlogged user -->
-      <button
-        type="button"
-        data-toggle="modal"
-        data-target="auth"
-        class="header__profile-button col-auto"
-      >
-        <div>
-          <img
-            src="https://genesis-stars.com/local/assets/img/user_icon.png"
-            alt=""
-          />
-        </div>
-        <span class="header__name-desk">Login</span>
-      </button>
-
-      <!-- if user is logged -->
-      <button
-        id="headerCabinetButton"
-        type="button"
-        class="header__profile-button col-auto"
-      >
-        <img
-          src="https://genesis-stars.com/local/assets/img/user_icon.png"
-          alt=""
-        />
-        <span class="header__name-desk"
-          >Iov Albu
-
-          <div class="header__cabinet-desk">
-            <a href="personal-info.html" class="header__item">Мой профиль</a>
-            <a href="#" class="header__item">Мои заказы</a>
-            <a href="messages.html" class="header__item">Мои сообщения</a>
-            <a href="notifications.html" class="header__item">Notifications</a>
-            <a href="#" class="header__item">Мои звонки</a>
-            <a href="invoices.html" class="header__item">Invoices</a>
-            <a href="#" class="header__item">Мои чаты</a>
-            <a href="#" class="header__item">Подписки</a>
-            <a href="expert-step-2.html" class="header__item">Devino Expert</a>
-            <a href="#" class="header__item active">Пополнить счет</a>
-            <a href="#" class="header__item">Помощь</a>
-            <a href="/" class="header__item">Выход</a>
-          </div>
-        </span>
-      </button>
-    </div>
-  </div>
-  <div class="header__cabinet-bottom" id="header__cabinet-bottom">
-    <div class="container header__cabinet-bottom-inner">
-      <div class="header__cabinet-bottom-item">
-        <a href="/" class="header__cabinet-bottom-link active">
-          <span class="header__cabinet-bottom-icon">
-            <i class="fas fa-home"></i>
-          </span>
-          <span class="header__cabinet-bottom-label">Home</span>
-        </a>
-      </div>
-      <div class="header__cabinet-bottom-item">
-        <a href="messages.html" class="header__cabinet-bottom-link">
-          <span class="header__cabinet-bottom-icon">
-            <i class="fas fa-envelope-square"></i>
-          </span>
-          <span class="header__cabinet-bottom-label">Chats</span>
-        </a>
-      </div>
-      <div class="header__cabinet-bottom-item">
-        <a href="#" class="header__cabinet-bottom-link">
-          <span class="header__cabinet-bottom-icon">
-            <i class="fas fa-phone-square"></i>
-          </span>
-          <span class="header__cabinet-bottom-label">Calls</span>
-        </a>
-      </div>
-      <div class="header__cabinet-bottom-item">
-        <a href="notifications.html" class="header__cabinet-bottom-link">
-          <span class="header__cabinet-bottom-icon">
-            <i class="fas fa-bell"></i>
-          </span>
-          <span class="header__cabinet-bottom-label">Notifications</span>
-        </a>
-      </div>
-      <div class="header__cabinet-bottom-item">
-        <a href="#" class="header__cabinet-bottom-link">
-          <span class="header__cabinet-bottom-icon">
-            <i class="fas fa-bars"></i>
-          </span>
-          <span class="header__cabinet-bottom-label">Cabinet</span>
-        </a>
-      </div>
+      <a href="/" class="header__logo header__logo-mobile logo col-auto">
+        <img src="img/icons/logo.svg" alt="" class="logo__image" />
+      </a>
     </div>
   </div>
   <div id="menu" class="header__menu">
     <span class="header__menu--close" id="closeMenu">&times;</span>
-    <div class="header__item header__settings">
-      MD / RO / <img src="img/icons/ro.png" alt="" />
-      <span class="header__space">|</span>
-      <span &__settings-button>Modifica</span>
-    </div>
-    <div class="header__item">
-      <div class="header__button">
-        <span>
-          Catalog de servicii
-        </span>
-        <svg
-          width="8"
-          height="16"
-          viewBox="0 0 8 16"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
-          ></path>
-        </svg>
-      </div>
-      <div class="header__submenu">
-        <div class="header__back">
-          <svg
-            width="8"
-            height="16"
-            viewBox="0 0 8 16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
-            ></path>
-          </svg>
-          <span>Back</span>
+    <div class="header__top">
+      <a href="/" class="header__logo header__logo-desk logo">
+        <img src="img/icons/logo.svg" alt="" class="logo__image" />
+      </a>
+      <div class="header__top-right">
+        <div class="header__item header__cont">
+          <span class="header__cont-icon">
+            <i class="fas fa-phone-square-alt"></i>
+          </span>
+          <span class="header__cont-numbers">
+            <a href="tel:+37307966626">079 66626</a>
+            <a href="tel:+37307966626">079 66626</a>
+          </span>
         </div>
-        <a href="#" class="header__item">Serviciu 1</a>
-        <a href="#" class="header__item">Serviciu 2</a>
-        <a href="#" class="header__item">Serviciu 3</a>
-        <a href="#" class="header__item">Serviciu 4</a>
+        <div class="header__item header__cont">
+          <span class="header__cont-icon">
+            <i class="fas fa-envelope-square"></i>
+          </span>
+          <span class="header__cont-numbers">
+            <a href="mailto:info@likemedia.md">info@likemedia.md</a>
+          </span>
+        </div>
+        <div class="header__item header__cont header__cont-ret">
+          <a href="facebook.com" class="header__cont-icon" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="mailto:info@likemedia.md" class="header__cont-icon">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+          <a href="facebook.com" class="header__cont-icon" target="_blank">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="header__item">
-      <div class="header__button">
-        <span>
-          Domenii de serviciu
-        </span>
-        <svg
-          width="8"
-          height="16"
-          viewBox="0 0 8 16"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
-          ></path>
-        </svg>
-      </div>
-      <div class="header__submenu">
-        <div class="header__back">
-          <svg
-            width="8"
-            height="16"
-            viewBox="0 0 8 16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
-            ></path>
-          </svg>
-          <span>Back</span>
-        </div>
-        <a href="#" class="header__item">Domeniu de serviciu 1</a>
-        <a href="#" class="header__item">Checkout</a>
+    <div class="header__bottom">
+      <div class="header__bottom-left">
+        <a href="/" class="header__item">Acasa</a>
+        <a href="about.html" class="header__item">About Us</a>
+        <a href="experts.html" class="header__item">Expertii Nostri</a>
         <div class="header__item">
           <div class="header__button">
             <span>
-              Catalog de servicii
+              Servicii
             </span>
             <svg
               width="8"
               height="16"
               viewBox="0 0 8 16"
               xmlns="http://www.w3.org/2000/svg"
+              style="color: currentColor;"
             >
               <path
                 d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
               ></path>
             </svg>
           </div>
-          <div class="header__submenu">
+          <div class="header__submenu header__submenu-firstLvl">
             <div class="header__back">
               <svg
                 width="8"
@@ -204,228 +84,246 @@
               </svg>
               <span>Back</span>
             </div>
-            <a href="#" class="header__item">Serviciu 1</a>
-            <a href="#" class="header__item">Serviciu 2</a>
-            <a href="#" class="header__item">Serviciu 3</a>
-            <a href="#" class="header__item">Serviciu 4</a>
+            <div class="header__item">
+              <div class="header__button">
+                <span>
+                  Cetatenia romana
+                </span>
+                <svg
+                  width="8"
+                  height="16"
+                  viewBox="0 0 8 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="header__submenu">
+                <div class="header__back">
+                  <svg
+                    width="8"
+                    height="16"
+                    viewBox="0 0 8 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                    ></path>
+                  </svg>
+                  <span>Back</span>
+                </div>
+                <a href="one-service.html" class="header__item"
+                  >Depunerea actelor pentru redobindirea cetateniei</a
+                >
+                <a href="one-service.html" class="header__item"
+                  >Depunerea Juramintului</a
+                >
+                <a href="one-service.html" class="header__item">Obtinerea CI</a>
+                <a href="one-service.html" class="header__item"
+                  >Obtinerea Pasaport Strain Ro</a
+                >
+                <a href="one-service.html" class="header__item"
+                  >Alocații pentru copiii cu cetățenie Română</a
+                >
+                <a href="one-service.html" class="header__item"
+                  >Transcriirea unui certificat de naștere românesc / certificat
+                  de casatorie</a
+                >
+                <a href="one-service.html" class="header__item"
+                  >Aplicarea mențiunii de încetare a căsătoriei sau de deces în
+                  România.</a
+                >
+                <a href="one-service.html" class="header__item"
+                  >Rectificarea actelor de stare civilă românești</a
+                >
+                <a href="one-service.html" class="header__item"
+                  >Reîntregirea familiei</a
+                >
+                <a href="one-service.html" class="header__item"
+                  >Înregistrarea căsătorii în străinătate pentru cetățenii
+                  moldoveni</a
+                >
+                <a href="one-service.html" class="header__item"
+                  >Înregistrarea căsătorii în străinătate pentru cetățenii
+                  români</a
+                >
+              </div>
+            </div>
+            <div class="header__item">
+              <div class="header__button">
+                <span>Permis de sedere</span>
+                <svg
+                  width="8"
+                  height="16"
+                  viewBox="0 0 8 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="header__submenu">
+                <div class="header__back">
+                  <svg
+                    width="8"
+                    height="16"
+                    viewBox="0 0 8 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                    ></path>
+                  </svg>
+                  <span>Back</span>
+                </div>
+                <a href="#" class="header__item"
+                  >Obtinerea Permisului de sedere Ro</a
+                >
+                <a href="#" class="header__item"
+                  >Prelungirea Permisului de sedere Ro</a
+                >
+              </div>
+            </div>
+            <div class="header__item">
+              <div class="header__button">
+                <span>Permis de Conducere</span>
+                <svg
+                  width="8"
+                  height="16"
+                  viewBox="0 0 8 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="header__submenu">
+                <div class="header__back">
+                  <svg
+                    width="8"
+                    height="16"
+                    viewBox="0 0 8 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                    ></path>
+                  </svg>
+                  <span>Back</span>
+                </div>
+                <a href="#" class="header__item"
+                  >Schimbul Permisului de Conducere Ro</a
+                >
+                <a href="#" class="header__item"
+                  >Prelungirea validitatii Permisului de Conducere Ro</a
+                >
+                <a href="#" class="header__item"
+                  >Restabilirea Permisului de Conducere Ro</a
+                >
+              </div>
+            </div>
+            <div class="header__item">
+              <div class="header__button">
+                <span>Obtinerea alte acte/ certificate Ro</span>
+                <svg
+                  width="8"
+                  height="16"
+                  viewBox="0 0 8 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="header__submenu">
+                <div class="header__back">
+                  <svg
+                    width="8"
+                    height="16"
+                    viewBox="0 0 8 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                    ></path>
+                  </svg>
+                  <span>Back</span>
+                </div>
+                <a href="#" class="header__item"
+                  >Certificat de cazier judiciar</a
+                >
+              </div>
+            </div>
+            <div class="header__item">
+              <div class="header__button">
+                <span>Alte Servicii</span>
+                <svg
+                  width="8"
+                  height="16"
+                  viewBox="0 0 8 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="header__submenu">
+                <div class="header__back">
+                  <svg
+                    width="8"
+                    height="16"
+                    viewBox="0 0 8 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+                    ></path>
+                  </svg>
+                  <span>Back</span>
+                </div>
+                <a href="#" class="header__item">Apostilare Documente</a>
+                <a href="#" class="header__item">Traducere Documente</a>
+                <a href="#" class="header__item">Transport</a>
+              </div>
+            </div>
           </div>
         </div>
-        <a href="#" class="header__item">Domeniu de serviciu 2</a>
-        <a href="#" class="header__item">Domeniu de serviciu 3</a>
-        <a href="#" class="header__item">Domeniu de serviciu 4</a>
+        <a href="contacts.html" class="header__item">Contacts</a>
       </div>
-    </div>
-    <div class="header__item">
-      <div class="header__button">
-        <span>
-          Pachete de servicii
-        </span>
-        <svg
-          width="8"
-          height="16"
-          viewBox="0 0 8 16"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
-          ></path>
-        </svg>
-      </div>
-      <div class="header__submenu">
-        <div class="header__back">
-          <svg
-            width="8"
-            height="16"
-            viewBox="0 0 8 16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
-            ></path>
-          </svg>
-          <span>Back</span>
+      <div class="header__bottom-right">
+        <div class="header__item header__settings-mobile">
+          RO / <img src="img/icons/ro.png" alt="" style="margin-left:10px" />
+          <span class="header__space">|</span>
+          <span class="header__settings-button">Modifica</span>
         </div>
-        <a href="#" class="header__item">Pachet de serviciu 1</a>
-        <a href="#" class="header__item">Pachet de serviciu 2</a>
-        <a href="#" class="header__item">Pachet de serviciu 3</a>
-        <a href="#" class="header__item">Pachet de serviciu 4</a>
-      </div>
-    </div>
-    <a href="category-one.html" class="header__item">One category</a>
-    <a href="orders.html" class="header__item">Orders</a>
-    <a href="checkout.html" class="header__item">Checkout</a>
-    <a href="one-product.html" class="header__item">One product</a>
-    <a href="one-service.html" class="header__item">One service</a>
-    <a href="category-all.html" class="header__item">All category</a>
-    <a href="#" class="header__item">Devino expert</a>
-    <a href="about.html" class="header__item">Despre</a>
-    <a href="contacts.html" class="header__item">Contacts</a>
-    <a href="#" class="button button-white">
-      Account
-    </a>
-    <div class="header__item">
-      <div class="header__button">
-        <span>
-          Support & Info
-        </span>
-        <svg
-          width="8"
-          height="16"
-          viewBox="0 0 8 16"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
-          ></path>
-        </svg>
-      </div>
-      <div class="header__submenu">
-        <div class="header__back">
-          <svg
-            width="8"
-            height="16"
-            viewBox="0 0 8 16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
-            ></path>
-          </svg>
-          <span>Back</span>
+        <div class="header__item header__settings-desk">
+          <div class="header__button">
+            <span>RO</span>
+            <svg
+              width="8"
+              height="16"
+              viewBox="0 0 8 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.772126 1.19065L0.153407 1.80934C0.00696973 1.95578 0.00696973 2.19322 0.153407 2.33969L5.80025 8L0.153407 13.6603C0.00696973 13.8067 0.00696973 14.0442 0.153407 14.1907L0.772126 14.8094C0.918563 14.9558 1.156 14.9558 1.30247 14.8094L7.84666 8.26519C7.99309 8.11875 7.99309 7.88131 7.84666 7.73484L1.30247 1.19065C1.156 1.04419 0.918563 1.04419 0.772126 1.19065Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="header__submenu">
+            <a href="#" class="header__item">RO</a>
+            <a href="#" class="header__item">RU</a>
+            <a href="#" class="header__item">EN</a>
+          </div>
         </div>
-        <a href="#" class="header__item">Contacts</a>
-        <a href="#" class="header__item">Support</a>
-        <a href="#" class="header__item">Information</a>
-      </div>
-    </div>
-  </div>
-  <div class="header__cabinet cabinet" id="headerCabinet">
-    <div class="cabinet__inner">
-      <div class="cabinet__header">
-        <button type="button" id="closeCabinet" class="cabinet__close">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <p class="cabinet__title">
-          My profile
-        </p>
-      </div>
-      <div class="cabinet__profile">
-        <div class="cabinet__avatar">
-          <img
-            src="https://genesis-stars.com/local/assets/img/user_icon.png"
-            alt=""
-          />
-        </div>
-        <div class="cabinet__info">
-          <div class="cabinet__name">Iov Albu</div>
-          <p class="cabinet__wallet">На Вашем счету: <span>0 rub.</span></p>
-        </div>
-      </div>
-      <div class="cabinet__bloc">
-        <p class="cabinet__bloc-title">
-          Settings
-        </p>
-        <a href="personal-info.html" class="cabinet__item">
-          <span class="cabinet__item-icon">
-            <i class="fas fa-user-alt"></i>
-          </span>
-          <span class="cabinet__item-name">
-            My profile and settings
-          </span>
-          <span class="cabinet__item-icon">
-            <i class="fas fa-chevron-right"></i>
-          </span>
-        </a>
-
-        <a href="my-photo.html" class="cabinet__item">
-          <span class="cabinet__item-icon">
-            <i class="fas fa-camera"></i>
-          </span>
-          <span class="cabinet__item-name">
-            My photo
-          </span>
-          <span class="cabinet__item-icon">
-            <i class="fas fa-chevron-right"></i>
-          </span>
-        </a>
-        <a href="my-subscribes.html" class="cabinet__item">
-          <span class="cabinet__item-icon">
-            <i class="fas fa-ellipsis-v"></i>
-            <i class="fas fa-bars"></i>
-          </span>
-          <span class="cabinet__item-name">
-            My subscribe
-          </span>
-          <span class="cabinet__item-icon">
-            <i class="fas fa-chevron-right"></i>
-          </span>
-        </a>
-      </div>
-      <div class="cabinet__bloc">
-        <p class="cabinet__bloc-title">
-          Ваш личный счет
-        </p>
-        <a href="#" class="cabinet__item">
-          <span class="cabinet__item-icon">
-            <i class="fas fa-wallet"></i>
-          </span>
-          <span class="cabinet__item-name">
-            Выписка по счету
-          </span>
-          <span class="cabinet__item-icon">
-            <i class="fas fa-chevron-right"></i>
-          </span>
-        </a>
-
-        <a href="charge.html" class="cabinet__item">
-          <span class="cabinet__item-icon">
-            <i class="fas fa-money-bill-wave-alt"></i>
-          </span>
-          <span class="cabinet__item-name">
-            Пополнить счет
-          </span>
-          <span class="cabinet__item-icon">
-            <i class="fas fa-chevron-right"></i>
-          </span>
-        </a>
-        <a href="bonus.html" class="cabinet__item">
-          <span class="cabinet__item-icon">
-            <i class="fas fa-percentage"></i>
-          </span>
-          <span class="cabinet__item-name">
-            Накопленные бонусы
-          </span>
-          <span class="cabinet__item-icon">
-            <i class="fas fa-chevron-right"></i>
-          </span>
-        </a>
-      </div>
-      <div class="cabinet__bloc">
-        <p class="cabinet__bloc-title">
-          Дополнительные возможности
-        </p>
-        <a href="#" class="cabinet__item">
-          <span class="cabinet__item-icon">
-            <i class="fas fa-question-circle"></i>
-          </span>
-          <span class="cabinet__item-name">
-            Помощь
-          </span>
-          <span class="cabinet__item-icon">
-            <i class="fas fa-chevron-right"></i>
-          </span>
-        </a>
-
-        <a href="#" class="cabinet__item">
-          <span class="cabinet__item-icon">
-            <i class="fas fa-sign-out-alt"></i>
-          </span>
-          <span class="cabinet__item-name">
-            Выйти
-          </span>
-          <span class="cabinet__item-icon">
-            <i class="fas fa-chevron-right"></i>
-          </span>
+        <a href="#" class="button">
+          Consultatie Gratuita
         </a>
       </div>
     </div>

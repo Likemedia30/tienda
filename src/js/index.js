@@ -52,9 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
     burger.addEventListener("click", openMenu);
     closeMenuButton.addEventListener("click", closeMenu);
 
-    headerCabinetButton.addEventListener("click", openCabinet);
-    closeCabinetButton.addEventListener("click", closeCabinet);
-
     // close menu on click outside menu
 
     document.addEventListener("click", (e) => {
