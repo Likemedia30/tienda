@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "HTML template",
   "main": "src/index.js",
+  "homepage": "https://likemedia30.github.io/tienda/",
   "scripts": {
     "dev": "webpack --mode development",
     "watch": "webpack --mode development --watch",
