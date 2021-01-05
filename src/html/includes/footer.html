@@ -1,12 +1,18 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__accordion row">
-      <div class="col-12">
-        <a href="/" class="logo">Logo</a>
+      <div class="col-lg-4 col-md-4 col-12">
+        <a href="/" class="logo">
+          <img src="img/icons/logo.svg" alt="" />
+        </a>
+        <p class="footer__text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+          consequatur quisquam, quaerat aut eum iste architecto rem pariatur.
+        </p>
       </div>
       <div class="footer__card col-lg-auto col-md-4 col-12">
         <button class="footer__button">
-          <span>Categories</span>
+          <span>Services</span>
           <svg
             width="8"
             height="16"
@@ -19,10 +25,12 @@
           </svg>
         </button>
         <div class="footer__card-body">
-          <a href="#">Item 1</a>
-          <a href="#">Item 2</a>
-          <a href="#">Item 3</a>
-          <a href="#">Item 4</a>
+          <a href="#">Cetatenia romana</a>
+          <a href="#">Permis de sedere</a>
+          <a href="#">Permis de munca</a>
+          <a href="#">Permis de Conducere</a>
+          <a href="#">Obtinerea alte acte/ certificate Ro</a>
+          <a href="#">Alte Servicii</a>
         </div>
       </div>
       <div class="footer__card col-lg-auto col-md-4 col-12">
@@ -48,7 +56,7 @@
       </div>
       <div class="footer__card col-lg-auto col-md-4 col-12">
         <button class="footer__button">
-          <span>Our services</span>
+          <span>Support</span>
           <svg
             width="8"
             height="16"
@@ -65,17 +73,6 @@
           <a href="video-consultation.html">Video Consultation</a>
           <a href="services.html">Services</a>
           <a href="#">Item 4</a>
-        </div>
-      </div>
-      <div class="col-12">
-        <div class="row">
-          <p class="footer__text col-xl-8 col-lg-10 col-12">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-            consequatur quisquam, quaerat aut eum iste architecto rem pariatur
-            dolores veniam a magnam id sunt! Nisi, quasi ipsam pariatur
-            dignissimos perferendis et, unde necessitatibus aut voluptate sed
-            saepe rerum sapiente! Dolor?
-          </p>
         </div>
       </div>
     </div>
@@ -287,21 +284,21 @@
         </div>
       </div>
       <div class="modal__additional">
-
         <!-- on order button -->
         <section class="modal__orderSteps orderSteps">
           <div class="orderSteps__header">
             <div class="orderSteps__item active">
               <span class="orderSteps__number">1</span>
-              <span>Registration</span> 
+              <span>Registration</span>
             </div>
             <div class="orderSteps__item">
               <span class="orderSteps__number">2</span>
-              <span>Order</span> 
+              <span>Order</span>
             </div>
           </div>
           <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente distinctio voluptatum libero magnam omnis assumenda?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            distinctio voluptatum libero magnam omnis assumenda?
           </p>
         </section>
         <section>
@@ -414,34 +411,27 @@
     </div>
   </div>
 </div>
-<div class="modal" id="forgetPassword">
+<div class="modal" id="book">
   <div class="modal__content">
     <div class="modal__close" data-dismiss="modal">&times;</div>
     <div class="modal__body">
       <div class="modal__flex-container">
         <h3 class="modal__title">
-          Восстановление пароля
+          Programeazate
         </h3>
-        <button
-          type="button"
-          class="modal__link link"
-          data-toggle="modal"
-          data-target="auth"
-        >
-          Sign in
-        </button>
       </div>
-      <p class="text">
-        Контрольная строка для смены пароля будет выслана вам по email.
-      </p>
       <form action="" class="form__modal">
         <div class="input-group">
-          <label for="emailForgotPassword">Enter email</label>
-          <input
-            type="email"
-            id="emailForgotPassword"
-            name="emailForgotPassword"
-          />
+          <label for="emailBook">Email</label>
+          <input type="email" id="emailBook" name="emailBook" />
+        </div>
+        <div class="input-group">
+          <label for="nameBook">Name / Last Name</label>
+          <input type="text" id="nameBook" name="nameBook" />
+        </div>
+        <div class="input-group">
+          <label for="phoneBook">Phone Number</label>
+          <input type="email" id="phoneBook" name="phoneBook" />
         </div>
         <button
           type="button"

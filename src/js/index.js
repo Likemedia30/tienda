@@ -210,36 +210,14 @@ document.addEventListener('DOMContentLoaded', function () {
   (function(){
     const slider = document.querySelectorAll('.slider');
 
-    $('.slider').slick({
+    $('.banner-promo').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       infinite: true,
       centerMode: true,
-      variableWidth: true,
       mobileFirst: true,
-      responsive: [
-        {
-          breakpoint: 574,
-          settings: {
-            slidesToShow: 1,
-            variableWidth: false
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-            variableWidth: false
-          }
-        },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            variableWidth: false
-          }
-        }
-      ]
+      arrows:false,
+      dots: true
     });
 
     $('.testimonials__slider').slick({
