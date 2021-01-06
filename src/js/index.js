@@ -61,16 +61,6 @@ document.addEventListener('DOMContentLoaded', function () {
         closeMenu();
       }
     })
-
-
-    // close cabinet on click outside menu
-
-    document.addEventListener("click", (e) => {
-      let isClickInside = headerCabinet.contains(e.target);
-      if(!headerCabinetButton.contains(e.target) && !isClickInside) {
-        closeCabinet();
-      }
-    })
   })();
 
   //Footer

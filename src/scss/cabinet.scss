@@ -175,43 +175,43 @@
   }
 }
 
-.user,
-.notification,
-.message {
-  display: flex;
-  align-items: center;
+// .user,
+// .notification,
+// .message {
+//   display: flex;
+//   align-items: center;
 
-  &__avatar {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    position: relative;
-    margin-right: 15px;
+//   &__avatar {
+//     width: 30px;
+//     height: 30px;
+//     border-radius: 50%;
+//     position: relative;
+//     margin-right: 15px;
 
-    img {
-      border-radius: 50%;
-    }
-  }
+//     img {
+//       border-radius: 50%;
+//     }
+//   }
 
-  &__name {
-    color: $color_hints;
-  }
+//   &__name {
+//     color: $color_hints;
+//   }
 
-  &__status {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: $color_hints;
-    border: 1px solid #fff;
-    position: absolute;
-    bottom: 2%;
-    right: 5%;
-  }
+//   &__status {
+//     width: 8px;
+//     height: 8px;
+//     border-radius: 50%;
+//     background-color: $color_hints;
+//     border: 1px solid #fff;
+//     position: absolute;
+//     bottom: 2%;
+//     right: 5%;
+//   }
 
-  &__status.online {
-    background: $fon_green;
-  }
-}
+//   &__status.online {
+//     background: $fon_green;
+//   }
+// }
 
 .notification {
   padding: 15px 0;
@@ -245,7 +245,6 @@
   }
 
   &.unread {
-
     .notification__name {
       font-weight: 700;
     }
@@ -292,7 +291,6 @@
   }
 
   &.unread {
-
     .message__text {
       font-weight: 700;
     }
@@ -300,7 +298,6 @@
 }
 
 .invoice {
-
   &__item {
     margin-bottom: 15px;
     display: block;
@@ -317,7 +314,7 @@
   }
 
   &__item-link {
-    color: $color_additional
+    color: $color_additional;
   }
 
   &__accordeon-title {
@@ -339,7 +336,6 @@
 
 @media (min-width: 991px) {
   .invoice {
-
     &__documents {
       margin-top: 0;
     }
