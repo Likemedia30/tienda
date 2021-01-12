@@ -242,6 +242,11 @@
             </div>
             <div class="header__bottom-right">
               <div class="header__item header__settings-mobile">
+                <select name="" id="languageMobile">
+                  <option value="ro">RO</option>
+                  <option value="ru">RU</option>
+                  <option value="en">EN</option>
+                </select>
                 RO / <img src="img/icons/ro.png" alt="" style="margin-left:10px" />
                 <span class="header__space">|</span>
                 <span class="header__settings-button">Modifica</span>
@@ -270,84 +275,248 @@
       </header>
 
       <main class="contacts">
-        <section class="content">
+        <div class="banner-contacts">
+          <div class="banner-contacts__container">
+            <img src="img/icons/contact-banner.jpg" alt="" />
+            <div class="banner-contacts__inner">
+              <div class="container">
+                <p class="banner-contacts__text text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section>
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <h1 class="contacts__title title">
-                  Contacts
-                </h1>
+                <h1 class="title">Contact Us</h1>
               </div>
-              <div class="col-lg-6 col-12 contacts__left">
-                <div class="contacts__bloc">
-                  <h3 class="contacts__label">
-                    Обслуживание клиентов, обратная связь и предложения:
-                  </h3>
-                  <p class="contacts__text text">
-                    Поддержка пользователей сайта:
-                    <a class="link" href="support@genesis-stars.com">support@genesis-stars.com</a>
-                  </p>
-                </div>
-                <div class="contacts__bloc">
-                  <h3 class="contacts__label">
-                    Партнерство:
-                  </h3>
-                  <p class="contacts__text text">
-                    Если Вы являетесь экспертом в области астрологии и эзотерики
-                    <a class="link" href="hr@genesis-stars.com">hr@genesis-stars.com</a>
-                  </p>
-                </div>
-                <div class="contacts__bloc">
-                  <h3 class="contacts__label">
-                    Корпоративный адрес:
-                  </h3>
-                  <p class="contacts__text text">
-                    Eisiskiu Sodu 18-oji street, 11, LT-02194, Vilnius, Lithuania
-                  </p>
-                </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts__content">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img class="contacts__flag" src="img/icons/MD.png" alt="" />
+                <p class="contacts__country contacts__text text center">
+                  Moldova
+                </p>
+                <p class="text center">Compania: IT MALL OU</p>
+                <p class="text center">
+                  <i class="fas fa-map-marker-alt"></i>
+                  Adresa depozitului: România, Brașov, str. Zizinului 9B
+                </p>
+                <p class="text center">
+                  <i class="fas fa-phone-alt"></i>
+                  Tel/ Viber/ Whatsapp: <a href="tel:+37379666626">+37379666626</a>
+                </p>
+                <p class="text center">
+                  <i class="fas fa-envelope-open"></i>
+                  Email: <a href="mailto:info@soledy.com">info@soledy.com</a>
+                </p>
+
+                <button class="contacts__button button button-white">
+                  <span>Discuta live cu expertul</span>
+                </button>
               </div>
-              <div class="col-lg-6 col-12 contacts__right">
-                <div class="contacts__video">
-                  <iframe
-                    width="988"
-                    height="560"
-                    src="https://www.youtube.com/embed/oziYC4FMzO8?autoplay=0"
-                    frameborder="0"
-                    allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture"
-                  ></iframe>
-                </div>
-                <h3 class="contacts__label">
-                  Отзывы наших пользователей
+              <div class="col-md-6">
+                <form class="contacts__form" action="">
+                  <div class="input-group">
+                    <label for="contactName">Name</label>
+                    <input type="text" id="contactName" />
+                  </div>
+                  <div class="input-group">
+                    <label for="contactPhone">Phone</label>
+                    <input type="text" id="contactPhone" />
+                  </div>
+                  <div class="input-group">
+                    <label for="contactEmail">Email</label>
+                    <input type="text" id="contactEmail" />
+                  </div>
+                  <div class="input-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" name="" id="" cols="30" rows="5"></textarea>
+                  </div>
+                  <button type="submit" class="button">
+                    <span>Send</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="team" id="team">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-8 col-12">
+                <h3 class="team__title title">
+                  DISCUTA LIVE CU EXPERTII NOSTRI
                 </h3>
-                <div class="contacts__bloc">
-                  <p class="contacts__name">
-                    Камила
-                  </p>
-                  <p class="contacts__age">24 года</p>
-                  <p class="contacts__text text">
-                    Очень благодарна..Спасибо вам большое..Всем советую обращаться именно к Анне..
-                  </p>
+                <p class="team__text text center">
+                  We are a team of dentists, hygienists and receptionists who work together to ensure that you receive
+                  the best treatment that you require at a very time that suits you.
+                </p>
+              </div>
+            </div>
+            <div class="row team__container">
+              <siv class="col-lg-4">
+                <div class="team__item">
+                  <img
+                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt=""
+                  />
+                  <div class="team__description">
+                    <div class="team__name">Steven Jacob</div>
+                    <span class="team__func">Jurist</span>
+                    <a href="#" class="team__button button">
+                      <span class="button__icon"><i class="fas  fa-phone-alt"></i></span>
+                      <span>call</span>
+                    </a>
+                  </div>
                 </div>
-                <div class="contacts__bloc">
-                  <p class="contacts__name">
-                    Камила
-                  </p>
-                  <p class="contacts__age">24 года</p>
-                  <p class="contacts__text text">
-                    Очень благодарна..Спасибо вам большое..Всем советую обращаться именно к Анне..
-                  </p>
+              </siv>
+              <div class="col-lg-4">
+                <div class="team__item">
+                  <img src="https://image.tmdb.org/t/p/original/hs2xlX7jAgY0dib1RPmjMjqVLMC.jpg" alt="" />
+                  <div class="team__description">
+                    <div class="team__name">Steven Jacob</div>
+                    <span class="team__func"
+                      >Jurist Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, non.</span
+                    >
+                    <a href="#" class="team__button button">
+                      <span class="button__icon"><i class="fas  fa-phone-alt"></i></span>
+                      <span>call</span>
+                    </a>
+                  </div>
                 </div>
-                <div class="contacts__bloc">
-                  <p class="contacts__name">
-                    Камила
-                  </p>
-                  <p class="contacts__age">24 года</p>
-                  <p class="contacts__text text">
-                    Очень благодарна..Спасибо вам большое..Всем советую обращаться именно к Анне..
-                  </p>
+              </div>
+              <div class="col-lg-4">
+                <div class="team__item">
+                  <img src="https://monkey47.com/thumbs/species-rara/mark-braun/mark-braun-500x750-q75.jpg" alt="" />
+                  <div class="team__description">
+                    <div class="team__name">Steven Jacob</div>
+                    <span class="team__func">Jurist Lorem ipsum dolor sit amet.</span>
+                    <a href="#" class="team__button button">
+                      <span class="button__icon"><i class="fas  fa-phone-alt"></i></span>
+                      <span>call</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <section class="testimonials">
+          <div class="container">
+            <h3 class="testimonials__title title">
+              Our Clients
+            </h3>
+            <div class="testimonials__slider">
+              <div class="testimonials__slide">
+                <p class="testimonials__activity">
+                  Lorem, ipsum.
+                </p>
+                <p class="testimonials__name">
+                  NAADAM
+                </p>
+                <blockquote class="testimonials__text">
+                  "We've used Fiverr for Shopify web development, graphic design, and backend web development. Working
+                  with Fiverr makes my job a little easier every day."
+                </blockquote>
+              </div>
+              <div class="testimonials__slide">
+                <p class="testimonials__activity">
+                  Lorem, ipsum dolor.
+                </p>
+                <p class="testimonials__name">
+                  NAADAM
+                </p>
+                <blockquote class="testimonials__text">
+                  "We've used Fiverr for Shopify web development, graphic design, and backend web development. Working
+                  with Fiverr makes my job a little easier every day."
+                </blockquote>
+              </div>
+              <div class="testimonials__slide">
+                <p class="testimonials__activity">
+                  Lorem, ipsum.
+                </p>
+                <p class="testimonials__name">
+                  NAADAM
+                </p>
+                <blockquote class="testimonials__text">
+                  "We've used Fiverr for Shopify web development, graphic design, and backend web development. Working
+                  with Fiverr makes my job a little easier every day."
+                </blockquote>
+              </div>
+              <div class="testimonials__slide">
+                <p class="testimonials__activity">
+                  Lorem ipsum dolor sit amet.
+                </p>
+                <p class="testimonials__name">
+                  NAADAM
+                </p>
+                <blockquote class="testimonials__text">
+                  "We've used Fiverr for Shopify web development, graphic design, and backend web development. Working
+                  with Fiverr makes my job a little easier every day."
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="map-contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-md-6 col-12">
+                <div class="hours-plan">
+                  <h5>Working Hours</h5>
+                  <p>Check out Montan Dentist’s Office hours to plan your visit.</p>
+                  <ul>
+                    <li><span>Monday</span><span>8AM-9PM</span></li>
+                    <li><span>Tuesday</span><span>8AM-9PM</span></li>
+                    <li><span>Wednesday</span><span>9AM-6:30PM</span></li>
+                    <li><span>Thursday</span><span>8AM-9PM</span></li>
+                    <li><span>Friday</span><span>8AM-9PM</span></li>
+                    <li><span>Saturday-Sunday</span><span>Closed</span></li>
+                  </ul>
+                  <h5>Need Flexible Time?</h5>
+                  <div class="button" data-toggle="modal" data-target="book">
+                    <span class="button__icon">
+                      <i class="fas fa-book"></i>
+                    </span>
+                    <span>Programeaza-te</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=bucuresti&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+              <a href="https://www.embedgooglemap.net"></a>
+            </div>
+            <style>
+              .mapouter {
+                text-align: right;
+                height: 100%;
+                width: 100%;
+              }
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 100%;
+                width: 100%;
+              }
+            </style>
           </div>
         </section>
       </main>

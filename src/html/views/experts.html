@@ -1,0 +1,31 @@
+<%= _.template(require('./../includes/head.html').default)(data) %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<main class="contacts">
+  <div class="banner-team">
+    <div class="banner-team__container">
+      <img src="img/icons/contact-banner.jpg" alt="" />
+      <div class="banner-team__inner">
+        <div class="container">
+          <h3 class="banner-team__title">
+            <small>Tienda</small>
+            <span>Specialized Team</span>
+          </h3>
+          <blockquote class="banner-team__quote text">
+            <p>
+              <span>"</span> We are a team of jurists, hygienists and
+              receptionists who work together to ensure that you receive the
+              best treatment that you require at a very time that suits you.
+              <span>"</span>
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= _.template(require('./../includes/our-experts.html').default)(data) %> <%=
+  _.template(require('./../includes/map-contact.html').default)(data) %>
+</main>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %> <%=
+_.template(require('./../includes/scripts.html').default)(data) %>

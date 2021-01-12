@@ -243,6 +243,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if(anchorItems) {
       anchorItems.forEach(e => {
         e.addEventListener("click", (e) => {
+          e.preventDefault();
+          const targetId = e.target.getAttribute('href');
+          const targetPosition = document.querySelector(targetId).offsetTop;
+          window.scrollTo({top:targetPosition})
           anchorItems.forEach(e => e.classList.remove('anchors__item-active'));
           e.target.classList.add('anchors__item-active');
         })
