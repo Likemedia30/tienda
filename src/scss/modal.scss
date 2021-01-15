@@ -101,20 +101,16 @@
   transition: opacity 1s ease;
 }
 
-#modalVideo.modal {
-  .modal__close {
-    color: #ffffff;
-    top: -20px;
-    right: -20px;
-  }
-}
-
 .backdrop.show {
   opacity: 1;
 }
 
 .modal.show {
   display: block;
+}
+
+.modal .paymentMethods .button {
+  width: calc(100% - 30px);
 }
 
 @media (min-width: 992px) {

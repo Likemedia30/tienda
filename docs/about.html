@@ -31,6 +31,44 @@
             <a href="/tienda" class="header__logo header__logo-mobile logo col-auto">
               <img src="img/icons/logo.svg" alt="" class="logo__image" />
             </a>
+            <!-- if unlogged user -->
+            <!-- <button
+        type="button"
+        data-toggle="modal"
+        data-target="auth"
+        class="header__profile-button col-auto"
+      >
+        <div>
+          <img
+            src="https://genesis-stars.com/local/assets/img/user_icon.png"
+            alt=""
+          />
+        </div>
+        <span class="header__name-desk">Login</span>
+      </button> -->
+
+            <!-- if user is logged -->
+            <button id="headerCabinetButton" type="button" class="header__profile-button col-auto">
+              <i class="fas fa-user"></i>
+              <span class="header__name-desk"
+                >Iov Albu
+
+                <div class="header__cabinet-desk">
+                  <a href="personal-info.html" class="header__item">Мой профиль</a>
+                  <a href="orders.html" class="header__item">Мои заказы</a>
+                  <a href="messages.html" class="header__item">Мои сообщения</a>
+                  <a href="notifications.html" class="header__item">Notifications</a>
+                  <a href="#" class="header__item">Мои звонки</a>
+                  <a href="invoices.html" class="header__item">Invoices</a>
+                  <a href="#" class="header__item">Мои чаты</a>
+                  <a href="#" class="header__item">Подписки</a>
+                  <a href="expert-step-2.html" class="header__item">Devino Expert</a>
+                  <a href="#" class="header__item active">Пополнить счет</a>
+                  <a href="#" class="header__item">Помощь</a>
+                  <a href="/" class="header__item">Выход</a>
+                </div>
+              </span>
+            </button>
           </div>
         </div>
         <div id="menu" class="header__menu">
@@ -46,10 +84,34 @@
                 </span>
                 <span class="header__cont-numbers">
                   <a href="tel:+37307966626">079 66626</a>
-                  <a href="tel:+37307966626">079 66626</a>
+                  <!-- <a href="tel:+37307966626">079 66626</a> -->
                 </span>
               </div>
-              <div class="header__item header__cont">
+              <div class="header__cont header__cont-desk">
+                <!-- if user is logged -->
+                <button id="headerCabinetButton" type="button" class="header__profile-button col-auto">
+                  <i class="fas fa-user"></i>
+                  <span class="header__name-desk"
+                    >Iov Albu
+
+                    <div class="header__cabinet-desk">
+                      <a href="personal-info.html" class="header__item">Мой профиль</a>
+                      <a href="orders.html" class="header__item">Мои заказы</a>
+                      <a href="messages.html" class="header__item">Мои сообщения</a>
+                      <a href="notifications.html" class="header__item">Notifications</a>
+                      <a href="#" class="header__item">Мои звонки</a>
+                      <a href="invoices.html" class="header__item">Invoices</a>
+                      <a href="#" class="header__item">Мои чаты</a>
+                      <a href="#" class="header__item">Подписки</a>
+                      <a href="expert-step-2.html" class="header__item">Devino Expert</a>
+                      <a href="#" class="header__item active">Пополнить счет</a>
+                      <a href="#" class="header__item">Помощь</a>
+                      <a href="/" class="header__item">Выход</a>
+                    </div>
+                  </span>
+                </button>
+              </div>
+              <div class="header__item header__cont header__cont-mobile">
                 <span class="header__cont-icon">
                   <i class="fas fa-envelope-square"></i>
                 </span>
@@ -57,7 +119,7 @@
                   <a href="mailto:info@likemedia.md">info@likemedia.md</a>
                 </span>
               </div>
-              <div class="header__item header__cont header__cont-ret">
+              <div class="header__item header__cont header__cont-mobile header__cont-ret">
                 <a href="facebook.com" class="header__cont-icon" target="_blank">
                   <i class="fab fa-facebook-square"></i>
                 </a>
@@ -269,6 +331,177 @@
               <div class="button" data-toggle="modal" data-target="book">
                 Consultatie Gratuita
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__cabinet-bottom" id="header__cabinet-bottom">
+          <div class="container header__cabinet-bottom-inner">
+            <div class="header__cabinet-bottom-item">
+              <a href="/" class="header__cabinet-bottom-link active">
+                <span class="header__cabinet-bottom-icon">
+                  <i class="fas fa-home"></i>
+                </span>
+                <span class="header__cabinet-bottom-label">Home</span>
+              </a>
+            </div>
+            <div class="header__cabinet-bottom-item">
+              <a href="messages.html" class="header__cabinet-bottom-link">
+                <span class="header__cabinet-bottom-icon">
+                  <i class="fas fa-envelope-square"></i>
+                </span>
+                <span class="header__cabinet-bottom-label">Chats</span>
+              </a>
+            </div>
+            <div class="header__cabinet-bottom-item">
+              <a href="#" class="header__cabinet-bottom-link">
+                <span class="header__cabinet-bottom-icon">
+                  <i class="fas fa-phone-square"></i>
+                </span>
+                <span class="header__cabinet-bottom-label">Calls</span>
+              </a>
+            </div>
+            <div class="header__cabinet-bottom-item">
+              <a
+                href="notifications.html"
+                data-toggle="modal"
+                data-target="selectServiceModal"
+                class="header__cabinet-bottom-link"
+              >
+                <span class="header__cabinet-bottom-icon">
+                  <i class="fas fa-search"></i>
+                </span>
+                <span class="header__cabinet-bottom-label">Search</span>
+              </a>
+            </div>
+            <div class="header__cabinet-bottom-item">
+              <a href="#" class="header__cabinet-bottom-link">
+                <span class="header__cabinet-bottom-icon">
+                  <i class="fas fa-bars"></i>
+                </span>
+                <span class="header__cabinet-bottom-label">Cabinet</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__cabinet cabinet" id="headerCabinet">
+          <div class="cabinet__inner">
+            <div class="cabinet__header">
+              <button type="button" id="closeCabinet" class="cabinet__close">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <p class="cabinet__title">
+                My profile
+              </p>
+            </div>
+            <div class="cabinet__profile">
+              <div class="cabinet__avatar">
+                <img src="https://genesis-stars.com/local/assets/img/user_icon.png" alt="" />
+              </div>
+              <div class="cabinet__info">
+                <div class="cabinet__name">Iov Albu</div>
+              </div>
+            </div>
+            <div class="cabinet__bloc cabinet__bloc-button">
+              <button data-toggle="modal" data-target="selectServiceModal" type="button" class="cabinet__button button">
+                <span class="button__icon"></span>
+                <span>Comanda Actul de care ai nevoie</span>
+              </button>
+            </div>
+            <div class="cabinet__bloc">
+              <p class="cabinet__bloc-title">
+                Settings
+              </p>
+              <a href="personal-info.html" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-user-alt"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  My profile and settings
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
+
+              <a href="my-photo.html" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-camera"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  My photo
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
+              <a href="my-subscribes.html" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-ellipsis-v"></i>
+                  <i class="fas fa-bars"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  My subscribe
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
+            </div>
+            <div class="cabinet__bloc">
+              <p class="cabinet__bloc-title">
+                Your personal charge
+              </p>
+
+              <a href="orders.html" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-file-invoice-dollar"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  My orders
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
+              <a href="#" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-wallet"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  Выписка по счету
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
+            </div>
+            <div class="cabinet__bloc">
+              <p class="cabinet__bloc-title">
+                Дополнительные возможности
+              </p>
+              <a href="#" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-question-circle"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  Помощь
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
+
+              <a href="#" class="cabinet__item">
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-sign-out-alt"></i>
+                </span>
+                <span class="cabinet__item-name">
+                  Выйти
+                </span>
+                <span class="cabinet__item-icon">
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -848,6 +1081,63 @@
                 </button>
               </section>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="selectServiceModal">
+        <div class="selectServiceModal__modal-content modal__content">
+          <div class="modal__close" data-dismiss="modal">&times;</div>
+          <div class="modal__body">
+            <h3 class="modal__title">
+              Choose Service
+            </h3>
+            <form action="">
+              <div class="input-group">
+                <label>Industry *</label>
+                <div class="dspFlex">
+                  <div class="select-container">
+                    <select name="" id="">
+                      <option value="cetr">Cetatenia Română</option>
+                      <option value="perms">Permis de Sedere</option>
+                      <option value="permc">Permis de Conducere</option>
+                      <option value="obt">Obtinerea alte acte</option>
+                      <option value="other">Alte Servicii</option>
+                    </select>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <span class="hint"
+                    ><i class="far fa-question-circle"></i>
+                    <span class="hint__content text text-white">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, enim?
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="input-group disabled">
+                <label>Industry type *</label>
+                <div class="dspFlex">
+                  <div class="select-container">
+                    <select name="" id="">
+                      <option value="cetr">Cetatenia Română</option>
+                      <option value="perms">Permis de Sedere</option>
+                      <option value="permc">Permis de Conducere</option>
+                      <option value="obt">Obtinerea alte acte</option>
+                      <option value="other">Alte Servicii</option>
+                    </select>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <span class="hint"
+                    ><i class="far fa-question-circle"></i>
+                    <span class="hint__content text text-white">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, enim?
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <button type="submit" class="button modal__button" data-dismiss="modal">
+                Enter
+              </button>
+            </form>
           </div>
         </div>
       </div>

@@ -52,6 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
     burger.addEventListener("click", openMenu);
     closeMenuButton.addEventListener("click", closeMenu);
 
+    headerCabinetButton.addEventListener("click", openCabinet);
+    closeCabinetButton.addEventListener("click", closeCabinet);
+
     // close menu on click outside menu
 
     document.addEventListener("click", (e) => {
@@ -260,9 +263,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.addEventListener("click", (e) => {
       if(e.target.getAttribute("data-toggle") === 'modal') {
+        e.preventDefault();
         const id = e.target.getAttribute('data-target');
         openModal(id);
       } else if(e.target.closest('[data-toggle="modal"')) {
+        e.preventDefault();
         const id = e.target.closest('[data-toggle="modal"]').getAttribute('data-target');
         openModal(id);
       } else {
@@ -350,8 +355,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     accordeonItems.forEach(e => e.addEventListener('click', openAccordeon));
 
-    function openAccordeon() {
-      if(this.classList.contains('open')) {
+    function openAccordeon(e) {
+      if((this.classList.contains('open') && !e.target.closest('.accordeon__item')) || (this.classList.contains('open') && e.target.closest('.accordeon__button'))) {
         this.classList.remove('open');
       } else {
         accordeonItems.forEach(e => e.classList.remove('open'));
@@ -359,5 +364,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   })();
+
+  
 })
 
